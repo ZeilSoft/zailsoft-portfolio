@@ -1,0 +1,7 @@
+{
+    "conventionalCommits.scopes": [
+        "Front",
+        "Back",
+        "Both"
+    ]
+}
