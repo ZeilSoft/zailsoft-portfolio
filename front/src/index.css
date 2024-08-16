@@ -16,8 +16,6 @@ body {
 }
 #sphere1 {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 500px;
   height: 500px;
   background: linear-gradient(
@@ -28,13 +26,39 @@ body {
   z-index: 1;
   border-radius: 50%;
   filter: blur(200px);
-  translate: -70% 20%;
-  animation: sphere1mov 10s linear infinite;
+  left: -20%;
+  top: 20%;
+  animation: sphere1mov 40s linear infinite;
 }
+@keyframes sphere1mov {
+  0% {
+    left: -20%;
+    top: 20%;
+  }
+  20% {
+    left: -20%;
+    top: 40%;
+  }
+  40% {
+    left: -35%;
+    top: 60%;
+  }
+  60% {
+    left: -50%;
+    top: 50%;
+  }
+  80% {
+    left: -35%;
+    top: 20%;
+  }
+  100% {
+    left: -20%;
+    top: 20%;
+  }
+}
+
 #sphere2 {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 400px;
   height: 400px;
   background: linear-gradient(
@@ -45,46 +69,33 @@ body {
   z-index: 1;
   border-radius: 50%;
   filter: blur(200px);
-  translate: 270% 20%;
-  animation: sphere2mov 10s linear infinite;
+  right: -20%;
+  top: 40%;
+  animation: sphere2mov 40s linear infinite;
 }
 @keyframes sphere2mov {
   0% {
-    translate: 270% 20%;
+    right: -20%;
+    top: 40%;
   }
   20% {
-    translate: 270% 40%;
+    right: -35%;
+    top: 60%;
   }
   40% {
-    translate: 285% 60%;
+    right: -50%;
+    top: 50%;
   }
   60% {
-    translate: 260% 50%;
+    right: -35%;
+    top: 20%;
   }
   80% {
-    translate: 285% 20%;
+    right: -20%;
+    top: 40%;
   }
   100% {
-    translate: 270% 20%;
-  }
-}
-@keyframes sphere1mov {
-  0% {
-    translate: -70% 20%;
-  }
-  20% {
-    translate: -70% 40%;
-  }
-  40% {
-    translate: -85% 60%;
-  }
-  60% {
-    translate: -100% 50%;
-  }
-  80% {
-    translate: -85% 20%;
-  }
-  100% {
-    translate: -70% 20%;
+    right: -20%;
+    top: 20%;
   }
 }
