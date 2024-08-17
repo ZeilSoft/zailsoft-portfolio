@@ -2,7 +2,7 @@ import Question from "../../../components/Question"
 
 const Questions = () => {
   return (
-    <div className="flex flex-col w-full gap-2">
+    <div className="flex flex-col w-full gap-2 p-8">
       <h2 className="text-3xl font-bold">Preguntas Frecuentes</h2>
       <Question
         question="¿Que es ZeilSoft?"

@@ -1,12 +1,15 @@
 const About = () => {
   return (
-    <section>
-      <h2 className="text-3xl font-bold">¿Quienes somos?</h2>
-      <div className="p-8">
+    <section
+      className="p-8 flex flex-col gap-4"
+      id="about"
+    >
+      <h2 className="text-3xl font-bold ">¿Quienes somos?</h2>
+      <div>
         <img
           src="/code.jpg"
           alt="code"
-          className="float-left w-96 m-4"
+          className="float-left w-96 mr-4"
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

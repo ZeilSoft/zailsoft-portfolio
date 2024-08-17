@@ -11,9 +11,9 @@ const Projects = () => {
     slidesToScroll: 1
   }
   return (
-    <section className="flex flex-col w-full gap-4">
+    <section className="flex flex-col w-full gap-4 p-8" id="projects">
       <h2 className="text-3xl font-bold">Proyectos</h2>
-      <div className="w-[90%] mx-auto">
+      <div className="w-[95%] mx-auto">
         <Slider {...settings} slidesToShow={widthScreen > 650 ? 3 : 1}>
         <Project />
         <Project />

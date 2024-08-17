@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
     <header>
-      <nav className="bg-[#0E100F] sticky left-0 top-0 z-10 w-full">
+      <nav className="bg-[#0E100F] sticky w-full top-0 z-50">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 w-full">
           <div className="relative flex h-16 items-center justify-between z-10 w-full">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden w-full">
