@@ -1,4 +1,4 @@
-const Header = () => {
+const Hero = () => {
   return (
     <section className="flex flex-col sm:flex-row gap-4 w-full p-8">
       <div className="flex flex-col m-auto w-full gap-4">
@@ -25,4 +25,4 @@ const Header = () => {
     </section>
   )
 }
-export default Header
+export default Hero

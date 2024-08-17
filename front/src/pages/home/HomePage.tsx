@@ -1,12 +1,20 @@
+import About from "./components/About"
 import Contact from "./components/Contact"
-import Header from "./components/Header"
+import Hero from "./components/Hero"
+import Info from "./components/Info"
+import Projects from "./components/Projects"
 import Questions from "./components/Questions"
+import Team from "./components/Team"
 
 const HomePage = () => {
   return (
     <div className="p-4 text-white flex flex-col gap-4">
-      <Header />
+      <Hero />
+      <About />
+      <Projects />
+      <Team />
       <Questions />
+      <Info />
       <Contact />
     </div>
   )

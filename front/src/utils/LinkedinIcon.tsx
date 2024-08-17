@@ -2,8 +2,8 @@ const LinkedinIcon = (props: any) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
-      width="1.1rem"
-      height="1.1rem"
+      width={20}
+      height={20}
       viewBox="0 0 100 100"
       {...props}
     >
