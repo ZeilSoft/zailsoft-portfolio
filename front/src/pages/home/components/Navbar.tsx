@@ -33,6 +33,8 @@ const Navbar = () => {
   const handleLanguageChange = (lang: string, flag: JSX.Element, text: string) => {
     i18n.changeLanguage(lang);
     localStorage.setItem('language', lang);
+    console.log(flag.type, text.length);
+    
     setCurrentLang(lang);
     setLangMenuOpen(false);
   };
