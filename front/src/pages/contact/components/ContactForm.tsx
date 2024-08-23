@@ -4,7 +4,7 @@ import { useMutation } from "@tanstack/react-query"
 import { SendEmail } from "../../../services/ContactService"
 import { ContactInterface } from "../../../interfaces/Contact"
 
-const Contact = () => {
+const ContactForm = () => {
   const initialValues: ContactInterface = {
     name: "",
     email: "",
@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section className="flex flex-col gap-4 w-full sm:w-[500px]" id="contact">
       <form
-        className="flex w-full flex-col m-auto md:max-w-[600px] gap-2"
+        className="flex w-full flex-col m-auto px-6 md:p-0 md:max-w-[600px] gap-2"
         onSubmit={formik.handleSubmit}
       >
         <div
@@ -124,4 +124,4 @@ const Contact = () => {
     </section>
   )
 }
-export default Contact
+export default ContactForm

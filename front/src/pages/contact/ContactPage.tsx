@@ -1,4 +1,4 @@
-import Contact from "./components/Contact"
+import ContactForm from "./components/ContactForm"
 import ContactInfo from "./components/ContactInfo"
 import ContactSocial from "./components/ContactSocial"
 
@@ -14,8 +14,8 @@ const ContactPage = () => {
           ¿Como podemos ayudarte?
         </h2>
       </section>
-      <section>
-        <Contact />
+      <section className="flex flex-col justify-center items-center w-full">
+        <ContactForm />
       </section>
       <section>
         <ContactInfo />

@@ -3,8 +3,8 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 const ContactInfo = () => {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col md:flex-row gap-8 md:gap-0">
-        <div className="flex flex-col basis-1/2 gap-4">
+      <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:gap-0">
+        <div className="flex items-center justify-center md:items-start md:flex-col basis-1/2 gap-4">
           <div>
             <div className="flex items-center justify-center rounded-full bg-main w-16 h-16">
               <Icon
