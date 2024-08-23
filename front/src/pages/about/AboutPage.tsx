@@ -4,7 +4,7 @@ import OurValues from "./components/OurValues"
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col gap-8 text-white py-4">
+    <div className="flex flex-col gap-8 text-white p-4">
       <section className="flex flex-col gap-4">
         <h1 className="text-6xl font-bold text-main">Sobre nosotros</h1>
 
@@ -49,7 +49,7 @@ const AboutPage = () => {
         <OurFounders />
       </section>
 
-      <section className="flex sm:flex-row flex-col h-64 bg-main rounded-xl">
+      <section className="flex sm:flex-row flex-col h-64 bg-main rounded-xl gap-4 items-center justify-center">
 
         <div className="flex basis-2/2 sm:basis-1/2 items-center justify-center flex-col">
 
@@ -67,8 +67,8 @@ const AboutPage = () => {
 
         <div className="flex basis-2/2 sm:basis-1/2 items-center justify-center">
 
-          <button className="py-2 px-4 rounded-md bg-blue-600 hover:bg-blue-600/90">
-            <a href="contact">Contactanos</a>
+          <button className="py-4 px-8 rounded-md bg-blue-600 hover:bg-blue-600/90">
+            <a href="contact" className="text-xl">Contactanos</a>
           </button>
 
         </div>

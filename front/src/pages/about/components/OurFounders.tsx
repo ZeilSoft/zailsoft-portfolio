@@ -2,7 +2,7 @@ import Founder from "../../../components/Founder"
 
 const OurFounders = () => {
   return (
-    <div className="flex flex-wrap justify-center sm:justify-between">
+    <div className="flex flex-wrap justify-center sm:justify-between gap-3">
       <Founder
         image="/founders/gabriel-nievas.webp"
         name="Gabriel Nievas"
