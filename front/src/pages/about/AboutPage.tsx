@@ -1,5 +1,5 @@
 import OurFounders from "./components/OurFounders"
-import OurHistory from "./components/Ourhistory"
+import OurHistory from "./components/OurHistory"
 import OurValues from "./components/OurValues"
 
 const AboutPage = () => {
