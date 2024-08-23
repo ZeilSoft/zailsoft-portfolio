@@ -23,8 +23,7 @@ const Contact = () => {
     }
   })
   return (
-    <section className="flex flex-col gap-4" id="contact">
-      <h2 className="text-3xl font-bold text-center">Contactanos</h2>
+    <section className="flex flex-col gap-4 w-full sm:w-[500px]" id="contact">
       <form
         className="flex w-full flex-col m-auto md:max-w-[600px] gap-2"
         onSubmit={formik.handleSubmit}
@@ -100,6 +99,7 @@ const Contact = () => {
             placeholder="Descripcion"
             {...formik.getFieldProps("description")}
             disabled={isPending}
+            rows={7}
           />
           {formik.touched.description && formik.errors.description && (
             <small className="font-bold text-[#ff4444]">
