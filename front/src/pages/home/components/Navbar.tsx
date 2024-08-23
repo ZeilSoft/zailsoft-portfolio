@@ -53,13 +53,13 @@ const Navbar = () => {
 
   return (
     <header className="sticky bg-[#0E100F] w-full top-0 z-50">
-      <nav className="mx-auto max-w-7xl px-4 py-5 w-full">
+      <nav className="mx-auto max-w-7xl px-6 md:px-8 py-5 w-full">
         <div className="flex items-center justify-between z-10 w-full">
-          {/* Open and Close menu button */}
+          {/* Open menu button */}
           <div className="items-center md:hidden">
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={open}
               onClick={() => setOpen(!open)}
@@ -68,16 +68,8 @@ const Navbar = () => {
 
               {/* Open */}
               <Icon
-                className={`${open ? "hidden" : "block"}`}
+                className={`${open ? "hidden" : "block ml-[-3px]"}`}
                 icon="material-symbols:menu"
-                width="24"
-                height="24"
-              />
-
-              {/* Close */}
-              <Icon
-                className={`${open ? "block" : "hidden"}`}
-                icon="material-symbols:close"
                 width="24"
                 height="24"
               />
@@ -154,7 +146,7 @@ const Navbar = () => {
           {/* Current language Flag and Text */}
           <div
             ref={langMenuRef}
-            className="flex flex-row gap-1 md:gap-2 justify-center items-center md:ml-8 lg:ml-12 relative cursor-pointer text-sm"
+            className="flex flex-row gap-1 md:gap-2 justify-center items-center md:ml-8 lg:ml-12 relative cursor-pointer text-sm mr-[-2px] md:mr-0"
             onClick={() => setLangMenuOpen(!langMenuOpen)}
           >
             {flag}

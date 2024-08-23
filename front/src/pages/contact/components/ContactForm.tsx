@@ -11,10 +11,12 @@ const ContactForm = () => {
     subject: "",
     description: ""
   }
+
   const { mutate, isPending, error, data } = useMutation({
     mutationKey: ["sendEmail"],
     mutationFn: SendEmail
   })
+
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: ContactScheme,
@@ -22,20 +24,21 @@ const ContactForm = () => {
       mutate(values)
     }
   })
+
   return (
-    <section className="flex flex-col gap-4 w-full sm:w-[500px]" id="contact">
+    <section className="flex flex-col gap-4 w-full " id="contact">
       <form
-        className="flex w-full flex-col m-auto px-6 md:p-0 md:max-w-[600px] gap-2"
+        className="flex w-full flex-col m-auto md:max-w-[600px] gap-4"
         onSubmit={formik.handleSubmit}
       >
         <div
-          className={`flex flex-col gap-1 ${
+          className={`flex flex-col gap-2 ${
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
           <label>Nombre completo</label>
           <input
-            className="text-black"
+            className="text-white bg-[#0E100F] border-none"
             type="text"
             placeholder="Nombre completo"
             {...formik.getFieldProps("name")}
@@ -49,13 +52,13 @@ const ContactForm = () => {
         </div>
 
         <div
-          className={`flex flex-col gap-1 ${
+          className={`flex flex-col gap-2 ${
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
           <label>Email</label>
           <input
-            className="text-black"
+            className="text-white bg-[#0E100F] border-none"
             type="email"
             placeholder="Email"
             {...formik.getFieldProps("email")}
@@ -69,13 +72,13 @@ const ContactForm = () => {
         </div>
 
         <div
-          className={`flex flex-col gap-1 ${
+          className={`flex flex-col gap-2 ${
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
           <label>Asunto</label>
           <input
-            className="text-black"
+            className="text-white bg-[#0E100F] border-none"
             type="text"
             placeholder="Asunto"
             {...formik.getFieldProps("subject")}
@@ -89,13 +92,13 @@ const ContactForm = () => {
         </div>
 
         <div
-          className={`flex flex-col gap-1 ${
+          className={`flex flex-col gap-2 ${
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
           <label>Descripcion</label>
           <textarea
-            className="text-black"
+            className="text-white bg-[#0E100F] border-none"
             placeholder="Descripcion"
             {...formik.getFieldProps("description")}
             disabled={isPending}
@@ -107,16 +110,19 @@ const ContactForm = () => {
             </small>
           )}
         </div>
+
         <button
-          className="w-full bg-main py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#374151] py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
           type="submit"
           disabled={isPending}
         >
           Enviar
         </button>
+
         {error && (
           <small className="font-bold text-[#ff4444]">{error.message}</small>
         )}
+        
         {data && (
           <small className="font-bold text-[#ff4444]">Ha habido un error</small>
         )}
