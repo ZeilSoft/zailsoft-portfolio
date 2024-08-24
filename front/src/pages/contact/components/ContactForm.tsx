@@ -3,6 +3,7 @@ import { ContactScheme } from "../../../utils/schemes/ContactScheme"
 import { useMutation } from "@tanstack/react-query"
 import { SendEmail } from "../../../services/ContactService"
 import { ContactInterface } from "../../../interfaces/Contact"
+import { useTranslation } from "react-i18next"
 
 const ContactForm = () => {
   const initialValues: ContactInterface = {
@@ -25,6 +26,8 @@ const ContactForm = () => {
     }
   })
 
+  const { t } = useTranslation();
+
   return (
     <section className="flex flex-col gap-4 w-full " id="contact">
       <form
@@ -36,11 +39,11 @@ const ContactForm = () => {
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
-          <label>Nombre completo</label>
+          <label>{t("fullname")}</label>
           <input
             className="text-white bg-[#0E100F] border-none"
             type="text"
-            placeholder="Nombre completo"
+            placeholder={t("fullname")}
             {...formik.getFieldProps("name")}
             disabled={isPending}
           />
@@ -56,11 +59,11 @@ const ContactForm = () => {
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
-          <label>Email</label>
+          <label>{t("email")}</label>
           <input
             className="text-white bg-[#0E100F] border-none"
             type="email"
-            placeholder="Email"
+            placeholder={t("email")}
             {...formik.getFieldProps("email")}
             disabled={isPending}
           />
@@ -76,11 +79,11 @@ const ContactForm = () => {
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
-          <label>Asunto</label>
+          <label>{t("subject")}</label>
           <input
             className="text-white bg-[#0E100F] border-none"
             type="text"
-            placeholder="Asunto"
+            placeholder={t("subject")}
             {...formik.getFieldProps("subject")}
             disabled={isPending}
           />
@@ -96,10 +99,10 @@ const ContactForm = () => {
             isPending ? "opacity-50" : "opacity-100"
           }`}
         >
-          <label>Descripcion</label>
+          <label>{t("description")}</label>
           <textarea
             className="text-white bg-[#0E100F] border-none"
-            placeholder="Descripcion"
+            placeholder={t("description")}
             {...formik.getFieldProps("description")}
             disabled={isPending}
             rows={7}
@@ -116,7 +119,7 @@ const ContactForm = () => {
           type="submit"
           disabled={isPending}
         >
-          Enviar
+          {t("send")}
         </button>
 
         {error && (

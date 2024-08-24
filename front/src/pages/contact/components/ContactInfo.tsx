@@ -1,6 +1,9 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
+import { useTranslation } from "react-i18next";
 
 const ContactInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col">
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:justify-between lg:gap-52 xl:gap-52">
@@ -17,8 +20,8 @@ const ContactInfo = () => {
           </div>
 
           <h3 className="text-[40px] lg:text-[45px] font-bold xl:flex xl:flex-row xl:gap-2.5">
-            <span className="block">Let's</span>
-            <span className="block">Collaborate</span>
+            <span className="block">{t("lets")}</span>
+            <span className="block">{t("collaborate")}</span>
           </h3>
         </div>
 

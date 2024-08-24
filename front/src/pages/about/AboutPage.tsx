@@ -4,7 +4,7 @@ import OurValues from "./components/OurValues"
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col gap-8 text-white p-4">
+    <div className="flex flex-col gap-8 text-white py-14 px-6 md:px-8">
       <section className="flex flex-col gap-4">
         <h1 className="text-6xl font-bold text-main">Sobre nosotros</h1>
 
