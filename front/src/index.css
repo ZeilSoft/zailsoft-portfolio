@@ -29,7 +29,7 @@ label{
 }
 
 #sphere1 {
-  position: absolute;
+  position: fixed;
   width: 30rem;
   height: 30rem;
   background: linear-gradient(
@@ -81,7 +81,7 @@ label{
 }
 
 #sphere2 {
-  position: absolute;
+  position: fixed;
   width: 30rem;
   height: 30rem;
   background: linear-gradient(
