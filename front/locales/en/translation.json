@@ -3,5 +3,15 @@
   "about-us": "About us",
   "services": "Services",
   "projects": "Projects",
-  "contact-us": "Contact us"
+  "contact-us": "Contact us",
+  "talk-to": "Talk to",
+  "us": "us",
+  "help": "How can we help you?",
+  "fullname": "Full name",
+  "email": "Email",
+  "subject": "Subject",
+  "description": "Description",
+  "send": "Send",
+  "lets": "Let's",
+  "collaborate": "collaborate"
 }
