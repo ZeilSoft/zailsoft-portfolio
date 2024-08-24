@@ -1,43 +1,40 @@
+import { Link } from "react-router-dom"
 import Value from "../../../components/Value"
 
 const OurValues = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-3">
-      <div className="flex flex-col sm:basis-1/2 md:basis-1/3 gap-2">
-        <h3 className="text-4xl font-bold">Nuestros Valores</h3>
+    <div className="flex flex-col lg:flex-row gap-[64px]">
+      <div className="flex flex-col w-auto lg:w-[35%] gap-7 flex-shrink-0">
+        <div className="flex flex-col gap-3">
+          <h3 className="text-main text-[35px] lg:text-[45px] font-bold xl:whitespace-nowrap">
+            Our values
+          </h3>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          totam iste deserunt aliquid impedit, dolor modi at voluptates, qui
-          iure natus cumque aut autem perspiciatis adipisci atque nulla dicta
-          repellendus.
-        </p>
+          <p className="text-base lg:text-[20px] leading-[2.5rem]">
+            Lorem ipsum dolor sit amet consesd adipisicing elit. Sapiente
+            totam iste deserunt aliquid impedit, dolor modi at voluptates, qui
+            iure natus cumque aut autem perspiciatis adipisci atque nulla dicta
+            repellendus. Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </div>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae
-          commodi excepturi tenetur obcaecati, adipisci enim sunt. Facilis
-          aliquid quae aut amet iusto quos doloribus saepe deserunt! Culpa, cum
-          ab!
-        </p>
-
-        <div className="flex justify-center items-center">
-          <button className="py-2 px-4 rounded-md border border-main hover:bg-main/90">
-            <a href="#contact">Contactenos</a>
-          </button>
+        <div className="flex justify-start items-center">
+          <Link to="/contact">
+            <button className="py-4 px-12 rounded-md border border-main hover:bg-main/90 transition-colors duration-150">
+              Contáctenos
+            </button>
+          </Link>
         </div>
       </div>
 
-      <div className="flex sm:basis-1/2 md:basis-2/3">
-        <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-3 w-full gap-2">
-          <Value icon="fa-solid:lightbulb" text="Integridad" />
-          <Value icon="fa-solid:lightbulb" text="Innovacion" />
-          <Value icon="fa-solid:lightbulb" text="Mejora continua" />
-          <Value icon="fa-solid:lightbulb" text="Trabajo en equipo" />
-          <Value icon="fa-solid:lightbulb" text="Adaptabilidad" />
-          <Value icon="fa-solid:lightbulb" text="Responsabilidad" />
-        </div>
+      <div className="p-[5%] lg:p-[60px] flex flex-col sm:flex-wrap sm:flex-row shadow-2xl shadow-main">
+        <Value icon="fa-solid:lightbulb" text="Integridad" />
+        <Value icon="fa-solid:lightbulb" text="Innovacion" />
+        <Value icon="fa-solid:lightbulb" text="Mejora continua" />
+        <Value icon="fa-solid:lightbulb" text="Trabajo en equipo" />
+        <Value icon="fa-solid:lightbulb" text="Adaptabilidad" />
+        <Value icon="fa-solid:lightbulb" text="Responsabilidad" />
       </div>
-
     </div>
   )
 }
