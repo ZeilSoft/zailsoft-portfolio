@@ -8,6 +8,7 @@ import ContactPage from "./pages/contact/ContactPage"
 import ProjectsPage from "./pages/projects/ProjectsPage"
 import ServicesPage from "./pages/services/ServicesPage"
 import "./index.css"
+
 function App() {
   return (
     <main className="font-poppins">
@@ -15,16 +16,16 @@ function App() {
 
         <Navbar />
 
-          <section className="w-full">
-             <div
-              id="sphere1"
-              className="bg-red-900 size-64 sm:size-80"
-              ></div>
-             <div
-               id="sphere2"
-               className="bg-red-900 size-64 sm:size-80"
-              ></div>
-         </section> 
+        {/* <section className="w-full">
+          <div
+            id="sphere1"
+            className="bg-red-900 size-64 sm:size-80"
+          ></div>
+          <div
+            id="sphere2"
+            className="bg-red-900 size-64 sm:size-80"
+          ></div>
+        </section>  */}
 
         <div className="flex flex-1 max-w-7xl">
 
@@ -37,11 +38,9 @@ function App() {
             <Route path='/404' element={ <NotFoundPage /> } />
             <Route path="/*" element={ <Navigate to="/404" replace />} />
           </Routes>
-
         </div>
 
         <Footer />
-
       </section>
     </main>
   )
