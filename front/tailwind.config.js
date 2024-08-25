@@ -16,6 +16,7 @@ export default {
       },
     },
     screens: {
+      "2xsm": '360px',
       "xsm": '415px',
       ...defaultTheme.screens,
     },

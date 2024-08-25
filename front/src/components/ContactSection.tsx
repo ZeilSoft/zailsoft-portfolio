@@ -7,14 +7,14 @@ const ContactSection = () => {
         <div className="flex flex-col gap-3 lg:w-[500px]">
           <h3 className="text-xl lg:text-[29px] font-bold">¡Hablemos!</h3>
 
-          <h4 className="text-[40px] lg:text-[64px] font-bold">
+          <h4 className="text-[30px] 2xsm:text-[35px] xsm:text-[40px] lg:text-[64px] font-bold">
             ¡Trabajemos juntos!
           </h4>
         </div>
       </div>
 
       <div className="flex items-center justify-center">
-        <button className="py-5 px-[50px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-600/90">
+        <button className="py-5 px-[30px] xsm:px-[50px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-600/90">
           <Link
             to="contact"
             className="text-xl lg:text-2xl"

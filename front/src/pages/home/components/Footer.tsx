@@ -16,17 +16,41 @@ const Footer = () => {
           <div className="flex flex-col gap-3 items-center lg:items-start">
             <h3 className="font-semibold text-lg">About</h3>
             <div className="flex flex-col items-center lg:items-start gap-2">
-              <p>Home</p>
-              <p>¿Quienes somos?</p>
-              <p>Contacto</p>
+              <Link 
+                className="hover:underline" 
+                to="/home"
+              >
+                Home
+              </Link>
+              <Link 
+                className="hover:underline" 
+                to="/about"
+              >
+                ¿Quienes somos?</Link>
+              <Link 
+                className="hover:underline" 
+                to="/contact"
+              >
+                Contacto
+              </Link>
             </div>
           </div>
 
           <div className="flex flex-col gap-3 items-center lg:items-start">
             <h3 className="font-semibold text-lg">Work</h3>
             <div className="flex flex-col items-center lg:items-start gap-2">
-              <p>Services</p>
-              <p>Proyectos</p>
+              <Link 
+                className="hover:underline" 
+                to="/services"
+              >
+                Servicios
+              </Link>
+              <Link 
+                className="hover:underline" 
+                to="/projects"
+              >
+                Proyectos
+              </Link>
             </div>
           </div>
 
