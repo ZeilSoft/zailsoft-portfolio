@@ -2,6 +2,7 @@
   "home": "Inicio",
   "about-us": "¿Quienes somos?",
   "services": "Servicios",
+  "service":"Servicio",
   "work": "Trabajo",
   "projects": "Proyectos",
   "contact-us": "Contacto",
@@ -21,5 +22,11 @@
   "copyright": "Copyright © 2024 ZeilSoft. Todos los derechos reservados.",
   "speech": "Juntos potenciamos la revolución Fintech.",
   "work-together": "¡Trabajemos juntos!",
-  "see-more": "Ver más"
+  "see-more": "Ver más",
+  "name-required": "El nombre es requerido",
+  "email-invalid": "El email no es válido",
+  "email-required": "El email es requerido",
+  "subject-required": "El asunto es requerido",
+  "description-required": "La descripción es requerida",
+  "our-main": "Nuestro principal"
 }
