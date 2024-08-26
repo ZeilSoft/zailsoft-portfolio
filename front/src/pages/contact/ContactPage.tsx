@@ -11,7 +11,7 @@ const ContactPage = () => {
       <section className="flex flex-col gap-10">
         <div className="flex flex-col gap-4">
           <h2 className="text-[40px] lg:text-[55px] leading-tight font-bold text-center">
-            {t("talk-to")} <strong className="text-[#374151]">{t("us")}</strong>
+            {t("talk-to")} <strong className="text-main">{t("us")}</strong>
           </h2>
 
           <h2 className="text-lg font-medium text-center">
