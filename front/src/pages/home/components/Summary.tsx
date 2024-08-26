@@ -1,10 +1,14 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
+import DashedCurve from "../../../utils/dashed-curve"
 
 const Summary = () => {
   return (
-    <div className="flex flex-col w-full justify-center items-center text-white gap-16">
+    <div className="flex flex-col w-full text-white gap-24 lg:gap-56 relative">
+      <div className="w-[55%] -top-16 absolute -z-10 hidden xl:block">
+        <DashedCurve />
+      </div>
       <div className="flex flex-col md:flex-row gap-4 m-auto">
-        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4">
+        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4  xl:pl-10">
           <div className="flex flex-row items-center gap-4">
             <div className="p-4 bg-main rounded-full">
               <Icon
@@ -47,8 +51,8 @@ const Summary = () => {
         </div>
       </div>
 
-      <div className="flex flex-col-reverse md:flex-row-reverse gap-4 m-auto">
-        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4">
+      <div className="flex flex-col md:flex-row-reverse gap-4 m-auto">
+        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4  xl:pl-28">
           <div className="flex flex-row items-center gap-4">
             <div className="p-4 bg-main rounded-full">
               <Icon
@@ -110,7 +114,6 @@ const Summary = () => {
               Javascript, Typescript, Node.js, NestJs, Ruby, React y React
               Native.
             </p>
-            
           </div>
         </div>
 
