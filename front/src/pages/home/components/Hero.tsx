@@ -1,27 +1,15 @@
+import { Link } from "react-router-dom"
+
 const Hero = () => {
   return (
-    <section className="flex flex-col sm:flex-row gap-4 w-full p-8">
-      <div className="flex flex-col m-auto w-full gap-4">
-        <h1 className="text-5xl font-bold">ZeilSoft</h1>
-        <p className="font-light">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-          quia culpa beatae maxime odit eaque iste consequatur aut voluptas
-          porro optio nisi quasi, sunt nam labore blanditiis deserunt error
-          distinctio.
-        </p>
-        <div>
-          <button className="py-2 px-4 rounded-md bg-main hover:bg-main/90">
-            <a href="#contact">Contacto</a>
-          </button>
-        </div>
-      </div>
-      <div className="flex w-full m-auto lg:p-10">
-        <img
-        className="rounded-md"
-          src="/code.jpg"
-          alt="code"
-        />
-      </div>
+    <section className="flex flex-col gap-2 pt-20 items-center justify-center w-full h-[550px] text-white bg-blue-600">
+      <h1 className="text-[50px] lg:text-[64px] font-bold text-center">
+        Empoderar a la Revolución Fintech, juntos.
+      </h1>
+      <Link to="contact" className="py-2 px-4 rounded-md bg-main hover:bg-main/90">
+        Contactanos
+      </Link>
+     
     </section>
   )
 }
