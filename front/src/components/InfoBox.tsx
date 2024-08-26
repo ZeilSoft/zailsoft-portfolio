@@ -5,7 +5,7 @@ interface InfoBoxProps {
 }
 const InfoBox = ({ icon, text }: InfoBoxProps) => {
   return (
-    <div className="flex gap-2 justify-center items-center rounded-md w-52 h-16 text-white text-center ">
+    <div className="flex gap-2 items-center sm:justify-center sm:items-center rounded-md w-52 h-16 text-white text-center ">
       <div className="p-4 rounded-lg bg-white shadow-md shadow-main">
         <Icon
           icon={icon}

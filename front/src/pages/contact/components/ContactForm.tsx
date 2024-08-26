@@ -115,7 +115,7 @@ const ContactForm = () => {
         </div>
 
         <button
-          className="w-full bg-[#374151] py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-main py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
           type="submit"
           disabled={isPending}
         >
