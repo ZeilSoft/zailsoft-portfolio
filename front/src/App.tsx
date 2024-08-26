@@ -27,8 +27,7 @@ function App() {
           ></div>
         </section>  */}
 
-        <div className="flex flex-1 max-w-7xl">
-
+        <div className="flex flex-1">
           <Routes>
             <Route path='/' element={ <HomePage /> } />
             <Route path='/about' element={ <AboutPage /> } />

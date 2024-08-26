@@ -1,47 +1,43 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
 import ContactSection from "../../components/ContactSection"
 import { Services } from "./components/Services"
-import Fintech from "./components/Fintech"
-import OurWork from "./components/OurWork"
-import Payments from "./components/Payments"
+import MainService from "./components/MainService"
+import OptimizeOurWork from "./components/OptimizeOurWork"
 
 const ServicesPage = () => {
   return (
-    <div className="flex flex-col w-full gap-16 pb-14">
-      <section className="flex flex-col gap-2 pt-20 items-center w-full h-[550px] text-white bg-blue-600">
-        <div className="p-14 rounded-full bg-white">
-          <Icon
-            icon="noto:rocket"
-            width="40"
-            height="40"
-          />
+    <div className="flex flex-col gap-16 max-w-7xl">
+      <section className="flex flex-col items-center relative">
+        <div className="bg-blue-600 pt-[80px] pb-[470px] absolute w-screen"></div>
+        
+        <div className="z-10 flex flex-col items-center relative pt-[50px] lg:pt-[67px] gap-3 h-[34.3rem]">
+          <div className="p-[25px] lg:p-[39px] rounded-full bg-white mb-[20px]">
+            <Icon
+              icon="noto:rocket"
+              width="57"
+              height="57"
+            />
+          </div>
+
+          <h2 className="text-[52px] lg:text-[62px] text-center font-bold text-white leading-[55px]">
+            Our main <span className="text-main">services</span>
+          </h2>
+
+          <h3 className="text-center text-[20px] text-white mt-0.5">How can we help you?</h3>
         </div>
-
-        <h2 className="text-3xl font-bold">
-          Nuestros servicios{" "}
-          <span className="text-3xl font-bold text-main">principales</span>
-        </h2>
-
-        <h3 className="text-center text-lg">¿En que podemos ayudarte?</h3>
-      </section>
-
-      <section>
+        
         <Services />
       </section>
 
-      <section className="transform -translate-y-40">
-        <Fintech />
+      <section className="px-6 md:px-8 max-w-7xl">
+        <MainService />
       </section>
 
-      <section className="transform -translate-y-20">
-        <OurWork />
+      <section className="px-6 md:px-8 max-w-7xl">
+        <OptimizeOurWork />
       </section>
       
-      <section className="transform -translate-y-10">
-        <Payments />
-      </section>
-
-      <section>
+      <section className="px-6 md:px-8 pb-14 max-w-7xl">
         <ContactSection />
       </section>
     </div>

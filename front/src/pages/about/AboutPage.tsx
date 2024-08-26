@@ -1,11 +1,10 @@
 import ContactSection from "../../components/ContactSection"
 import OurFounders from "./components/OurFounders"
-// import OurHistory from "./components/OurHistory"
 import OurValues from "./components/OurValues"
 
 const AboutPage = () => {
   return (
-    <div className="text-white flex flex-col gap-20 py-14 px-6 md:px-8">
+    <div className="text-white flex flex-col gap-20 py-14 px-6 md:px-8 max-w-7xl">
       <section className="flex flex-col gap-4">
         <h1 className="text-[50px] lg:text-[64px] font-bold text-main">
           Sobre nosotros
@@ -21,10 +20,6 @@ const AboutPage = () => {
           del proceso como componentes clave de un resultado exitoso
         </p>
       </section>
-
-      {/* <section>
-        <OurHistory />
-      </section> */}
 
       <section className="flex flex-col gap-3">
         <h3 className="text-[35px] lg:text-[45px] font-bold text-main">

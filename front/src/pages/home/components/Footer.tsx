@@ -35,7 +35,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-
+          
           <div className="flex flex-col gap-3 items-center lg:items-start">
             <h3 className="font-semibold text-lg">Work</h3>
             <div className="flex flex-col items-center lg:items-start gap-2">
