@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
+import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 
 const Cards = () => {
@@ -27,6 +28,7 @@ interface CardProps {
   link: string
 }
 function Card({ icon, title, description, link }: CardProps) {
+  const {t} = useTranslation()
   return (
     <div className="group">
       <Link
@@ -47,7 +49,7 @@ function Card({ icon, title, description, link }: CardProps) {
         </div>
         <div className="flex items-center justify-center">
           <button className="bg-main py-2 px-4 text-white rounded-md duration-700 group-hover:bg-white group-hover:text-main">
-            <Link to={link}>Ver más</Link>
+            <Link to={link}>{t("see-more")}</Link>
           </button>
         </div>
       </Link>
