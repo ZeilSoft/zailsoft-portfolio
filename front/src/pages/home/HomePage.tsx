@@ -1,22 +1,18 @@
-// import About from "./components/About"
-// import Contact from "./components/Contact"
-// import Hero from "./components/Hero"
-// import Info from "./components/Info"
-// import Projects from "./components/Projects"
-// import Questions from "./components/Questions"
-// import Team from "./components/Team"
+import ContactSection from "../../components/ContactSection"
+import Hero from "./components/Hero"
+import Info from "./components/Info"
 
 const HomePage = () => {
   return (
-    <div className="text-yellow-100 flex flex-col gap-4">
-      HomePage
-      {/* <Hero />
-      <About />
-      <Projects />
-      <Team />
-      <Questions />
-      <Info />
-      <Contact /> */}
+    <div className="flex flex-col gap-16 w-full pb-14">
+      <section>
+        <Hero />
+        <Info />
+      </section>
+
+      <section>
+        <ContactSection />
+      </section>
     </div>
   )
 }
