@@ -119,7 +119,7 @@ const Navbar = () => {
                   {t('services')}
                 </NavLink>
 
-                <NavLink
+                {/* <NavLink
                   to="projects"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
@@ -128,7 +128,7 @@ const Navbar = () => {
                   }
                 >
                   {t('projects')}
-                </NavLink>
+                </NavLink> */}
 
                 <NavLink
                   to="contact"
@@ -239,7 +239,7 @@ const Navbar = () => {
                 {t('services')}
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 to="projects"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
@@ -249,7 +249,7 @@ const Navbar = () => {
                 onClick={() => setOpen(false)}
               >
                 {t('projects')}
-              </NavLink>
+              </NavLink> */}
 
               <NavLink
                 to="contact"
