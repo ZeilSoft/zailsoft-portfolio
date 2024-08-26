@@ -6,11 +6,10 @@ const Hero = () => {
       <h1 className="text-[50px] lg:text-[64px] font-bold text-center">
         Empoderar a la Revolución Fintech, juntos.
       </h1>
-      <button className="py-2 px-4 rounded-md bg-main hover:bg-main/90">
-      <Link to="contact">
+      <Link to="contact" className="py-2 px-4 rounded-md bg-main hover:bg-main/90">
         Contactanos
       </Link>
-      </button>
+     
     </section>
   )
 }

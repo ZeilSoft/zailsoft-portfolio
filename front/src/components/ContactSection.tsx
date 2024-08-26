@@ -14,14 +14,13 @@ const ContactSection = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <button className="py-5 px-[30px] xsm:px-[50px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-600/90">
+
           <Link
             to="contact"
-            className="text-xl lg:text-2xl"
+            className="py-5 px-[30px] xsm:px-[50px] font-semibold rounded-lg bg-blue-600 hover:bg-blue-600/90 text-xl lg:text-2xl"
           >
             Contactanos
           </Link>
-        </button>
       </div>
     </section>
   )
