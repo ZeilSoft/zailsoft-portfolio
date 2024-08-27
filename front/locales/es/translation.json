@@ -28,5 +28,7 @@
   "email-required": "El email es requerido",
   "subject-required": "El asunto es requerido",
   "description-required": "La descripción es requerida",
-  "our-main": "Nuestro principal"
+  "our-main": "Nuestro principal",
+  "error-sending-email": "Error al enviar el email",
+  "send-email" : "Hemos recibido correctamente su email"
 }

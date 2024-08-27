@@ -27,6 +27,8 @@
   "email-required": "Email is required",
   "subject-required": "Subject is required",
   "description-required": "Description is required",
-  "our-main": "Our main"
+  "our-main": "Our main",
+  "error-sending-email": "Error sending email",
+  "send-email" : "We have successfully received your email."
 
 }
