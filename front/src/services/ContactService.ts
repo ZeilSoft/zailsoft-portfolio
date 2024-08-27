@@ -1,12 +1,14 @@
-import axiosInstance from "../api/axiosIntanse"
-import { ContactInterface } from "../interfaces/Contact"
-
-export async function SendEmail(
-    data: ContactInterface
-) {
+import emailjs from "@emailjs/browser"
+export default async function SendEmail(formData : FormData) {
   try {
-    const response = await axiosInstance.post("/contact", data)
-    return response
+    const data = Object.fromEntries(formData.entries());
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      data,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    return true
   } catch (error) {
     throw error
   }
