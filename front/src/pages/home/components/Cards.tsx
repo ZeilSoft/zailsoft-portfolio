@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
-import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 const Cards = () => {
   return (
@@ -31,6 +31,7 @@ interface CardProps {
 
 function Card({ icon, title, description, link }: CardProps) {
   const {t} = useTranslation()
+
   return (
     // <div className="group">
       <div className="flex flex-col px-[30px] py-[49px] bg-white max-w-[497px] rounded-xl gap-8 duration-300 group-hover:bg-main">
@@ -52,9 +53,11 @@ function Card({ icon, title, description, link }: CardProps) {
         </p>
 
         <div className="flex items-center justify-center">
-          <button className="bg-main py-2 px-4 text-white rounded-md duration-700 group-hover:bg-white group-hover:text-main">
-            <Link to={link}>{t("see-more")}</Link>
-          </button>
+          <Link to={link}>
+            <button className="bg-main hover:bg-main/80 font-medium py-[11px] px-[35px] text-white rounded-md duration-300 group-hover:bg-white group-hover:text-main">
+              {t("see-more")}
+            </button>
+          </Link>
         </div>
       </div>
     // </div>
