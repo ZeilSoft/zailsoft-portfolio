@@ -2,9 +2,12 @@
   "home": "Home",
   "about-us": "About us",
   "services": "Services",
+  "work": "Work",
   "projects": "Projects",
   "contact-us": "Contact us",
+  "follow-us": "Follow us",
   "talk-to": "Talk to",
+  "talk": "Let's talk",
   "us": "us",
   "help": "How can we help you?",
   "fullname": "Full name",
@@ -13,5 +16,17 @@
   "description": "Description",
   "send": "Send",
   "lets": "Let's",
-  "collaborate": "collaborate"
+  "collaborate": "collaborate",
+  "talk-us": "Talk to us!",
+  "copyright": "Copyright © 2024 ZeilSoft. All Rights Reserved.",
+  "speech": "Empowering the Fintech Revolution, together.",
+  "work-together": "Let's work together!",
+  "see-more": "See more",
+  "name-required": "Name is required",
+  "email-invalid": "Email is invalid",
+  "email-required": "Email is required",
+  "subject-required": "Subject is required",
+  "description-required": "Description is required",
+  "our-main": "Our main"
+
 }

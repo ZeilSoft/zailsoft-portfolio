@@ -1,11 +1,16 @@
 import * as yup from "yup"
 
+import i18n from "../../i18n";
+
+const translate = (key: string) => {
+  return i18n.t(key);
+};
 export const ContactScheme = yup.object().shape({
-  name: yup.string().required("El nombre es requerido"),
+  name: yup.string().required(translate("name-required")),
   email: yup
     .string()
-    .email("El email es requerido")
-    .required("El email es requerido"),
-  subject: yup.string().required("El asunto es requerido"),
-  description: yup.string().required("La descripción es requerida")
+    .email(translate("email-invalid"))
+    .required(translate("email-required")),
+  subject: yup.string().required(translate("subject-required")),
+  description: yup.string().required(translate("description-required"))
 })

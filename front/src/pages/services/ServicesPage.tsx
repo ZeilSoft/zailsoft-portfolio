@@ -3,8 +3,10 @@ import ContactSection from "../../components/ContactSection"
 import { Services } from "./components/Services"
 import MainService from "./components/MainService"
 import OptimizeOurWork from "./components/OptimizeOurWork"
+import { useTranslation } from "react-i18next"
 
 const ServicesPage = () => {
+  const {t} = useTranslation()
   return (
     <div className="flex flex-col gap-16 max-w-7xl">
       <section className="flex flex-col items-center relative">
@@ -20,10 +22,10 @@ const ServicesPage = () => {
           </div>
 
           <h2 className="text-[52px] lg:text-[62px] text-center font-bold text-white leading-[55px]">
-            Our main <span className="text-main">services</span>
+           {t("our-main")} <span className="text-main">{t("service")}</span>
           </h2>
 
-          <h3 className="text-center text-[20px] text-white mt-0.5">How can we help you?</h3>
+          <h3 className="text-center text-[20px] text-white mt-0.5">{t("help")}</h3>
         </div>
         
         <Services />
