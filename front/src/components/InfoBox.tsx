@@ -5,16 +5,16 @@ interface InfoBoxProps {
 }
 const InfoBox = ({ icon, text }: InfoBoxProps) => {
   return (
-    <div className="flex gap-2 items-center sm:justify-center sm:items-center rounded-md w-52 h-16 text-white text-center ">
-      <div className="p-4 rounded-lg bg-white shadow-md shadow-main">
+    <div className="flex flex-col gap-3 items-center sm:justify-center sm:items-center rounded-md text-white text-center">
+      <div className="p-5 rounded-lg bg-white shadow-md shadow-main">
         <Icon
           icon={icon}
-          width="24"
-          height="24"
+          width="39"
+          height="39"
           color="black"
         />
       </div>
-      <span className="text-sm text-left">
+      <span className="text-lg lg:text-[20px] font-semibold text-center max-w-[250px]">
         {text}
       </span>
     </div>

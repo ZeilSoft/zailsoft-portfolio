@@ -3,14 +3,16 @@ import DashedCurve from "../../../utils/dashed-curve"
 
 const Summary = () => {
   return (
-    <div className="flex flex-col w-full text-white gap-24 lg:gap-56 relative">
-      <div className="w-[55%] -top-16 absolute -z-10 hidden xl:block">
+    <div className="flex flex-col w-full text-white gap-16 xl:gap-[136px] relative">
+      <div className="absolute w-[55%] top-[-64px] left-[-13px] -z-10 hidden xl:block">
         <DashedCurve />
       </div>
-      <div className="flex flex-col md:flex-row gap-4 m-auto">
-        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4  xl:pl-10">
-          <div className="flex flex-row items-center gap-4">
-            <div className="p-4 bg-main rounded-full">
+
+      {/* First */}
+      <div className="flex flex-col items-center md:flex-row gap-4">
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-row items-center gap-6">
+            <div className="p-[17px] bg-main rounded-full">
               <Icon
                 icon="formkit:people"
                 width="24"
@@ -19,42 +21,38 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-lg text-white">Quienes somos</h3>
+            <h3 className="text-[17px] text-white">¿Quienes somos?</h3>
           </div>
 
-          <h4 className="text-4xl leading-[60px]">
-            <span className="text-main leading-5">
+          <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] xl:max-w-[80%]">
+            <span className="text-main">
               Equipo multidisciplinario
             </span>{" "}
             con expertos en fintech, tecnología, negocios, productos y
             operaciones.
           </h4>
 
-          <div className="w-[80%] text-sm">
+          <div className="text-base leading-[27px] xl:max-w-[70%]">
             <p>
               Esto nos permite estar calificados y preparados para ofrecer una
               solución integral.
             </p>
 
             <p>
-              Nuestras oficinas en Berlín y Montevideo nos permiten cubrir todas
+              Nuestras oficinas en Buenos Aires y Cordoba nos permiten cubrir todas
               las zonas horarias para mejorar la cooperación entre equipos.
             </p>
           </div>
         </div>
 
-        <div className="flex basis-12/12 md:basis-5/12 justify-center items-center">
-          <img
-            src="/code.jpg"
-            alt=""
-          />
-        </div>
+        <img src="/home/team.png" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
       </div>
 
-      <div className="flex flex-col md:flex-row-reverse gap-4 m-auto">
-        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4  xl:pl-28">
-          <div className="flex flex-row items-center gap-4">
-            <div className="p-4 bg-main rounded-full">
+      {/* Second */}
+      <div className="flex flex-col items-center md:flex-row-reverse gap-4 xl:gap-[185px]">
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-row items-center gap-6">
+            <div className="p-[17px] bg-main rounded-full">
               <Icon
                 icon="fa6-solid:face-smile"
                 width="24"
@@ -62,15 +60,15 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-lg text-white">Nuestro enfoque</h3>
+            <h3 className="text-[17px] text-white">Nuestro enfoque</h3>
           </div>
 
-          <h4 className="text-4xl leading-[60px]">
-            <span className="text-main leading-5">Entregamos</span> gran sofware
+          <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
+            <span className="text-main">Entregamos</span> gran sofware
             con la mejor tecnología
           </h4>
 
-          <div className="w-[80%] text-sm">
+          <div className="text-base leading-[27px] lg:max-w-[70%]">
             <p>
               Con una mentalidad de puesta en marcha, ofrecemos un gran software
               con ingeniería ágil. Puede confiar en nosotros para construir algo
@@ -81,18 +79,14 @@ const Summary = () => {
           </div>
         </div>
 
-        <div className="flex basis-12/12 md:basis-5/12 justify-center items-center">
-          <img
-            src="/code.jpg"
-            alt=""
-          />
-        </div>
+        <img src="/home/software.svg" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 m-auto">
-        <div className="flex flex-col basis-12/12 md:basis-7/12 gap-4">
-          <div className="flex flex-row items-center gap-4">
-            <div className="p-4 bg-main rounded-full">
+      {/* Third */}
+      <div className="flex flex-col items-center md:flex-row gap-4">
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-row items-center gap-6">
+            <div className="p-[17px] bg-main rounded-full">
               <Icon
                 icon="streamline:desktop-code"
                 width="24"
@@ -100,15 +94,15 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-lg text-white">Nuestras tecnologias</h3>
+            <h3 className="text-[17px] text-white">Nuestras tecnologias</h3>
           </div>
 
-          <h4 className="text-4xl leading-[60px]">
+          <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
             <span className="text-main leading-5">Nos especializamos</span> con
             expertos en fintech, tecnología, negocios, productos y operaciones.
           </h4>
 
-          <div className="w-[80%] text-sm">
+          <div className="text-base leading-[27px] lg:max-w-[70%]">
             <p>
               Algunas de las tecnologías en las que nos especializamos son:
               Javascript, Typescript, Node.js, NestJs, Ruby, React y React
@@ -117,12 +111,7 @@ const Summary = () => {
           </div>
         </div>
 
-        <div className="flex basis-12/12 md:basis-5/12 justify-center items-center">
-          <img
-            src="/code.jpg"
-            alt=""
-          />
-        </div>
+        <img src="/home/tech.svg" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
       </div>
     </div>
   )
