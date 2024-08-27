@@ -4,12 +4,12 @@ import DashedCurve from "../../../utils/dashed-curve"
 const Summary = () => {
   return (
     <div className="flex flex-col w-full text-white gap-16 xl:gap-[136px] relative">
-      <div className="absolute w-[55%] top-[-64px] left-[-13px] -z-10 hidden xl:block">
+      <div className="absolute w-[55%] top-[-64px] left-[-13px] z-10 hidden xl:block">
         <DashedCurve />
       </div>
 
       {/* First */}
-      <div className="flex flex-col items-center md:flex-row gap-4">
+      <div className="flex flex-col items-center md:flex-row gap-4 z-20">
         <div className="flex flex-col gap-5">
           <div className="flex flex-row items-center gap-6">
             <div className="p-[17px] bg-main rounded-full">
@@ -17,7 +17,7 @@ const Summary = () => {
                 icon="formkit:people"
                 width="24"
                 height="24"
-                color="white"
+                className="text-white"
               />
             </div>
 
@@ -49,7 +49,7 @@ const Summary = () => {
       </div>
 
       {/* Second */}
-      <div className="flex flex-col items-center md:flex-row-reverse gap-4 xl:gap-[185px]">
+      <div className="flex flex-col items-center md:flex-row-reverse gap-4 xl:gap-[185px] z-20">
         <div className="flex flex-col gap-5">
           <div className="flex flex-row items-center gap-6">
             <div className="p-[17px] bg-main rounded-full">
@@ -57,6 +57,7 @@ const Summary = () => {
                 icon="fa6-solid:face-smile"
                 width="24"
                 height="24"
+                className="text-white"
               />
             </div>
 
@@ -83,7 +84,7 @@ const Summary = () => {
       </div>
 
       {/* Third */}
-      <div className="flex flex-col items-center md:flex-row gap-4">
+      <div className="flex flex-col items-center md:flex-row gap-4 z-20">
         <div className="flex flex-col gap-5">
           <div className="flex flex-row items-center gap-6">
             <div className="p-[17px] bg-main rounded-full">
@@ -91,6 +92,7 @@ const Summary = () => {
                 icon="streamline:desktop-code"
                 width="24"
                 height="24"
+                className="text-white"
               />
             </div>
 

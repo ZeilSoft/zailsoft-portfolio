@@ -12,20 +12,20 @@ import "./index.css"
 function App() {
   return (
     <main className="font-poppins">
-      <section className="w-full flex flex-col justify-center items-center min-h-screen">
+      <section className="your_css_selector_here w-full flex flex-col justify-center items-center min-h-screen">
 
         <Navbar />
 
-        {/* <section className="w-full">
+        {/* <section className="w-full your_css_selector_here">
           <div
             id="sphere1"
-            className="bg-red-900 size-64 sm:size-80"
+            className="size-64 sm:size-80"
           ></div>
           <div
             id="sphere2"
-            className="bg-red-900 size-64 sm:size-80"
+            className="size-64 sm:size-80"
           ></div>
-        </section>  */}
+        </section> */}
 
         <div className="flex flex-1">
           <Routes>

@@ -7,7 +7,7 @@ const Value = ({ icon, text }: ValueProps) => {
   return (
     <div className="flex justify-start items-center lg:my-5 w-1/2 p-[12px]">
       <div className="flex gap-5">
-        <div className="flex justify-center items-center bg-main rounded-xl w-[60px] h-[60px] lg:w-[90px] lg:h-[90px]">
+        <div className="bg-white bg-opacity-25 backdrop-filter shadow-md shadow-white flex justify-center items-center rounded-xl w-[60px] h-[60px] lg:w-[90px] lg:h-[90px]">
           <Icon
             icon={icon}
             width="24"

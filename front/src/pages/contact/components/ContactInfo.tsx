@@ -9,7 +9,7 @@ const ContactInfo = () => {
       <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:justify-between lg:gap-52 xl:gap-52">
         {/* Lets Colaborate */}
         <div className="flex flex-col w-full lg:w-auto xsm:flex-row xsm:items-center xsm:justify-center lg:flex-col lg:items-start gap-5">
-          <div className="relative rounded-full bg-[#374151] w-[75px] h-[75px] p-4 lg:mt-[40px]">
+          <div className="relative rounded-full bg-main w-[75px] h-[75px] p-4 lg:mt-[40px]">
             <Icon
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               icon="ant-design:message-filled"

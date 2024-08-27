@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import SpainFlag from "../../../assets/flags/SpainFlag";
 import UnitedStatesFlag from "../../../assets/flags/UnitedStatesFlag";
 
@@ -11,6 +11,8 @@ const Navbar = () => {
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('language') || 'es');
   const { t, i18n } = useTranslation();
   const langMenuRef = useRef<HTMLDivElement | null>(null);
+  const location = useLocation();
+  const pathName = location.pathname;
 
   // useEffect para manejar clics fuera del menú
   useEffect(() => {
@@ -59,7 +61,7 @@ const Navbar = () => {
           <div className="items-center md:hidden">
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-main/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={open}
               onClick={() => setOpen(!open)}
@@ -79,18 +81,21 @@ const Navbar = () => {
           {/* ZeilSoft Logo */}
           <div className="flex items-center">
             <Link to="/">
-              <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="ZeilSoft Logo" />
+              <Icon icon="ri:tailwind-css-fill" width="32" height="32" className="text-main" />
+              {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="ZeilSoft Logo" /> */}
             </Link>
           </div>
 
           {/* NavLinks */}
           <div className="hidden md:ml-6 md:flex md:flex-1">
-              <div className="flex w-full items-center justify-end text-center flex-row gap-2">
+              <div className="flex w-full items-center justify-end text-center flex-row gap-2 re">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      isActive
+                        ? "text-main border-b-2 border-main" // Línea roja cuando está activo
+                        : "text-gray-300 hover:bg-main/80 hover:text-white"
                     } transition-colors duration-300`
                   }
                 >
@@ -101,7 +106,7 @@ const Navbar = () => {
                   to="about"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                     } transition-colors duration-300`
                   }
                 >
@@ -112,7 +117,7 @@ const Navbar = () => {
                   to="services"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                     } transition-colors duration-300`
                   }
                 >
@@ -123,7 +128,7 @@ const Navbar = () => {
                   to="projects"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                     } transition-colors duration-300`
                   }
                 >
@@ -134,7 +139,7 @@ const Navbar = () => {
                   to="contact"
                   className={({ isActive }) =>
                     `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                     } transition-colors duration-300`
                   }
                 >
@@ -158,13 +163,13 @@ const Navbar = () => {
 
             {/* Languages Modal */}
             <div
-              className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0E100F] border border-gray-700 rounded-md shadow-lg w-32 p-2 transition-all duration-300 ${
+              className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0E100F] rounded-md w-32 p-2 transition-all duration-300 ${
                 langMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
               }`}
             >
               <div className="flex flex-col gap-2">
                 <button
-                  className="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                  className="w-full text-left text-gray-300 hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
                   onClick={() => handleLanguageChange('es', <SpainFlag />, 'Español')}
                 >
                   <SpainFlag />
@@ -172,7 +177,7 @@ const Navbar = () => {
                 </button>
 
                 <button
-                  className="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                  className="w-full text-left text-gray-300 hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
                   onClick={() => handleLanguageChange('en', <UnitedStatesFlag />, 'English')}
                 >
                   <UnitedStatesFlag />
@@ -207,7 +212,7 @@ const Navbar = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -219,7 +224,7 @@ const Navbar = () => {
                 to="about"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -231,7 +236,7 @@ const Navbar = () => {
                 to="services"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -243,7 +248,7 @@ const Navbar = () => {
                 to="projects"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -255,7 +260,7 @@ const Navbar = () => {
                 to="contact"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-gray-700 text-gray-300" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}

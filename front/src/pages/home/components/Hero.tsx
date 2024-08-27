@@ -13,7 +13,7 @@ const Hero = () => {
           distinctio.
         </p>
 
-        <button className="py-2.5 px-6 rounded-md bg-main hover:bg-main/90">
+        <button className="py-2.5 px-6 rounded-md bg-main hover:bg-main/80 transition-colors duration-300">
           <Link className="text-[17.5px] font-semibold" to="/contact">Contacto us</Link>
         </button>
       </div>

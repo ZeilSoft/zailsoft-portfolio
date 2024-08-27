@@ -20,14 +20,14 @@ const OurValues = () => {
 
         <div className="flex justify-start items-center">
           <Link to="/contact">
-            <button className="py-4 px-12 rounded-md border border-main hover:bg-main/90 transition-colors duration-150">
+            <button className="py-4 px-12 rounded-md border border-[#cf485f] hover:bg-[#cf485f]/90 transition-colors duration-300">
               Contáctenos
             </button>
           </Link>
         </div>
       </div>
 
-      <div className="p-[5%] lg:p-[60px] flex flex-col sm:flex-wrap sm:flex-row shadow-2xl shadow-main">
+      <div className="bg-white bg-opacity-25 backdrop-filter shadow-md shadow-white p-[5%] lg:p-[60px] flex flex-col sm:flex-wrap sm:flex-row">
         <Value icon="fa-solid:lightbulb" text="Integridad" />
         <Value icon="fa-solid:lightbulb" text="Innovacion" />
         <Value icon="fa-solid:lightbulb" text="Mejora continua" />

@@ -10,7 +10,10 @@ const Footer = () => {
     <div className="bg-[#0E100F] z-20 text-white w-full">
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-4 items-start justify-between mx-auto max-w-7xl w-full px-6 md:px-8 py-10">
         <div className="flex flex-col gap-2 mx-auto text-center lg:text-left lg:mx-0">
-          <h1 className="font-semibol text-xl">ZeilSoftLogo</h1>
+          <div className="flex flex-row justify-center items-center lg:justify-start gap-2">
+            <Icon icon="ri:tailwind-css-fill" width="32" height="32" className="text-main"  />
+            <h1 className="font-semibol text-xl">ZeilSoftLogo</h1>
+          </div>
           <p className="text-base max-w-[342px]">{t("speech")}</p>
         </div>
 
@@ -19,18 +22,18 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">{t("about-us")}</h3>
             <div className="flex flex-col items-center lg:items-start gap-2">
               <Link 
-                className="hover:underline" 
+                className="hover:underline hover:text-main transition-colors duration-150" 
                 to="/home"
               >
                 {t("home")}
               </Link>
               <Link 
-                className="hover:underline" 
+                className="hover:underline hover:text-main transition-colors duration-150" 
                 to="/about"
               >
                 {t("about-us")}</Link>
               <Link 
-                className="hover:underline" 
+                className="hover:underline hover:text-main transition-colors duration-150" 
                 to="/contact"
               >
                 {t("contact-us")}
@@ -42,7 +45,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">{t("work")}</h3>
             <div className="flex flex-col items-center lg:items-start gap-2">
               <Link 
-                className="hover:underline" 
+                className="hover:underline hover:text-main transition-colors duration-150" 
                 to="/services"
               >
                 {t("services")}
@@ -65,24 +68,28 @@ const Footer = () => {
 
           <div className="flex flex-col gap-2 items-center lg:items-start">
             <h3 className="font-semibold text-lg">{t("follow-us")}</h3>
-            <div className="flex flex-row gap-2">
-              <div className="flex justify-center items-center shadow-lg shadow-main rounded-full p-[10px] w-10 h-auto">
+            <div className="flex flex-row gap-2 mx-auto">
+              <Link
+                to="https://www.linkedin.com/feed/"
+                className="flex justify-center items-center shadow-lg shadow-main rounded-full p-[10px] w-10 h-auto hover:bg-main transition-all duration-300 hover:shadow-none"
+                target="_blank"
+              >
                 <Icon icon="ri:linkedin-fill" className=" w-6" />
-              </div>
-              <div className="flex justify-center items-center shadow-lg shadow-main rounded-full p-[10px] w-10 h-auto">
+              </Link>
+              {/* <div className="flex justify-center items-center shadow-lg shadow-main rounded-full p-[10px] w-10 h-auto">
                 <Icon icon="ri:linkedin-fill" className=" w-6" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </div>
 
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-        <hr className="h-px mb-4 bg-white border-0 "></hr>
-        <div className="text-center font-semibold text-base">
-          {t("help")} <Link to="/contact" className="text-[#374151] hover:underline cursor-pointer">{t("talk-to")} {t("us")}.</Link>
+        <hr className="h-[0.5px] mb-4 bg-white border-0 "></hr>
+        <div className="text-center font-semibold text-[15px]">
+          {t("help")} <Link to="/contact" className="text-main hover:underline cursor-pointer">{t("talk-to")} {t("us")}.</Link>
         </div>
-        <hr className="h-px mt-4 bg-white border-0"></hr>
+        <hr className="h-[0.5px] mt-4 bg-white border-0"></hr>
       </div>
 
       <div className="flex justify-center mx-auto p-[30px] text-sm text-center">
