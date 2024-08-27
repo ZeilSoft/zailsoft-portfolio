@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SpainFlag from "../../../assets/flags/SpainFlag";
 import UnitedStatesFlag from "../../../assets/flags/UnitedStatesFlag";
 
@@ -11,8 +11,6 @@ const Navbar = () => {
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('language') || 'es');
   const { t, i18n } = useTranslation();
   const langMenuRef = useRef<HTMLDivElement | null>(null);
-  const location = useLocation();
-  const pathName = location.pathname;
 
   // useEffect para manejar clics fuera del menú
   useEffect(() => {
