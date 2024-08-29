@@ -1,9 +1,10 @@
 import { Icon } from "@iconify/react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import SpainFlag from "../../../assets/flags/SpainFlag";
 import UnitedStatesFlag from "../../../assets/flags/UnitedStatesFlag";
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('language') || 'es');
   const { t, i18n } = useTranslation();
   const langMenuRef = useRef<HTMLDivElement | null>(null);
+  const { pathname } = useLocation();
 
   // useEffect para manejar clics fuera del menú
   useEffect(() => {
@@ -59,7 +61,7 @@ const Navbar = () => {
           <div className="items-center md:hidden">
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md text-gray-400 hover:bg-main/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md text-white hover:bg-main/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={open}
               onClick={() => setOpen(!open)}
@@ -68,7 +70,7 @@ const Navbar = () => {
 
               {/* Open */}
               <Icon
-                className={`${open ? "hidden" : "block ml-[-3px]"}`}
+                className={`${open ? "block" : "block ml-[-3px]"}`}
                 icon="material-symbols:menu"
                 width="24"
                 height="24"
@@ -86,64 +88,163 @@ const Navbar = () => {
 
           {/* NavLinks */}
           <div className="hidden md:ml-6 md:flex md:flex-1">
-              <div className="flex w-full items-center justify-end text-center flex-row gap-2 re">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive
-                        ? "text-main border-b-2 border-main" // Línea roja cuando está activo
-                        : "text-gray-300 hover:bg-main/80 hover:text-white"
-                    } transition-colors duration-300`
-                  }
-                >
-                  {t('home')}
-                </NavLink>
+            <div className="flex w-full items-center justify-end text-center flex-row gap-2 re">
 
-                <NavLink
-                  to="about"
-                  className={({ isActive }) =>
-                    `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
-                    } transition-colors duration-300`
-                  }
+              {/* <NavLink
+                to="/"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-white'}`}
+              >
+                {t('home')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 ${pathname === '/' ? 'w-full' : 'w-0'}`}
                 >
-                  {t('about-us')}
-                </NavLink>
+                  &nbsp;
+                </span>
+              </NavLink>
 
-                <NavLink
-                  to="services"
-                  className={({ isActive }) =>
-                    `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
-                    } transition-colors duration-300`
-                  }
+              <NavLink
+                to="/about"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-white'}`}
+              >
+                {t('about-us')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
+                    ${pathname === '/about' ? 'w-full' : 'w-0'}`}
                 >
-                  {t('services')}
-                </NavLink>
+                  &nbsp;
+                </span>
+              </NavLink>
 
-                {/* <NavLink
-                  to="projects"
-                  className={({ isActive }) =>
-                    `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
-                    } transition-colors duration-300`
-                  }
+              <NavLink
+                to="/services"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-white'}`}
+              >
+                {t('services')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
+                    ${pathname === '/services' ? 'w-full' : 'w-0'}`}
                 >
-                  {t('projects')}
-                </NavLink> */}
+                  &nbsp;
+                </span>
+              </NavLink>
 
-                <NavLink
-                  to="contact"
-                  className={({ isActive }) =>
-                    `rounded-md px-3 py-2 text-sm font-medium ${
-                      isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
-                    } transition-colors duration-300`
-                  }
+              <NavLink
+                to="/contact"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-white'}`}
+              >
+                {t('contact-us')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
+                    ${pathname === '/contact' ? 'w-full' : 'w-0'}`}
                 >
-                  {t('contact-us')}
-                </NavLink>
-              </div>
+                  &nbsp;
+                </span>
+              </NavLink> */}
+
+              <NavLink
+                to="/"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-white'}`}
+              >
+                {t('home')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-1/2 -translate-x-1/2 bottom-[1px] transition-[width] ease duration-[400ms] ${pathname === '/' ? 'w-[80%]' : 'w-0'}`}
+                >
+                  &nbsp;
+                </span>
+              </NavLink>
+
+              <NavLink
+                to="/about"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-white'}`}
+              >
+                {t('about-us')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-1/2 -translate-x-1/2 bottom-[1px] transition-[width] ease duration-[400ms] ${pathname === '/about' ? 'w-[80%]' : 'w-0'}`}
+                >
+                  &nbsp;
+                </span>
+              </NavLink>
+
+              <NavLink
+                to="/services"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-white'}`}
+              >
+                {t('services')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-1/2 -translate-x-1/2 bottom-[1px] transition-[width] ease duration-[400ms] ${pathname === '/services' ? 'w-[80%]' : 'w-0'}`}
+                >
+                  &nbsp;
+                </span>
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-white'}`}
+              >
+                {t('contact-us')}
+                <span
+                  className={`h-[2.5px] inline-block bg-main absolute left-1/2 -translate-x-1/2 bottom-[1px] transition-[width] ease duration-[400ms] ${pathname === '/contact' ? 'w-[80%]' : 'w-0'}`}
+                >
+                  &nbsp;
+                </span>
+              </NavLink>
+
+
+
+
+              {/* <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium ${
+                    isActive
+                      ? "text-main border-b-2 border-main"
+                      : "text-white hover:text-main"
+                  } transition-colors duration-300`
+                }
+              >
+                {t('home')}
+              </NavLink>
+
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium ${
+                    isActive
+                      ? "text-main border-b-2 border-main"
+                      : "text-white hover:text-main"
+                  } transition-colors duration-300`
+                }
+              >
+                {t('about-us')}
+              </NavLink>
+
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium ${
+                    isActive
+                      ? "text-main border-b-2 border-main"
+                      : "text-white hover:text-main"
+                  } transition-colors duration-300`
+                }
+              >
+                {t('services')}
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  `rounded-md px-3 py-2 text-sm font-medium ${
+                    isActive
+                      ? "text-main border-b-2 border-main"
+                      : "text-white hover:text-main"
+                  } transition-colors duration-300`
+                }
+              >
+                {t('contact-us')}
+              </NavLink> */}
+
+            </div>
           </div>
 
           {/* Current language Flag and Text */}
@@ -154,7 +255,7 @@ const Navbar = () => {
           >
             {flag}
             <div className="flex flex-row gap-2 justify-start">
-              <p className="hidden md:flex text-gray-300 leading-none">{text}</p>
+              <p className="hidden md:flex text-white leading-none">{text}</p>
             </div>
 
             <Icon className="text-white mb-[3px]" icon="ph:caret-down-bold" width="15" height="15" />
@@ -167,7 +268,7 @@ const Navbar = () => {
             >
               <div className="flex flex-col gap-2">
                 <button
-                  className="w-full text-left text-gray-300 hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                  className="w-full text-left text-white hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
                   onClick={() => handleLanguageChange('es', <SpainFlag />, 'Español')}
                 >
                   <SpainFlag />
@@ -175,7 +276,7 @@ const Navbar = () => {
                 </button>
 
                 <button
-                  className="w-full text-left text-gray-300 hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                  className="w-full text-left text-white hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
                   onClick={() => handleLanguageChange('en', <UnitedStatesFlag />, 'English')}
                 >
                   <UnitedStatesFlag />
@@ -210,7 +311,7 @@ const Navbar = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -222,7 +323,7 @@ const Navbar = () => {
                 to="about"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -234,7 +335,7 @@ const Navbar = () => {
                 to="services"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -242,23 +343,11 @@ const Navbar = () => {
                 {t('services')}
               </NavLink>
 
-              {/* <NavLink
-                to="projects"
-                className={({ isActive }) =>
-                  `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
-                  } transition-colors duration-300`
-                }
-                onClick={() => setOpen(false)}
-              >
-                {t('projects')}
-              </NavLink> */}
-
               <NavLink
                 to="contact"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-gray-300" : "text-gray-300 hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}

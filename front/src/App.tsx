@@ -12,8 +12,8 @@ import "./index.css"
 function App() {
   return (
     <main className="font-poppins">
-      <section className="your_css_selector_here w-full flex flex-col justify-center items-center min-h-screen">
-
+      <section className="w-full flex flex-col justify-center items-center min-h-screen">
+      {/* your_css_selector_here */}
         <Navbar />
 
         {/* <section className="w-full your_css_selector_here">

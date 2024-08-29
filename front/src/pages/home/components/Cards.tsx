@@ -13,7 +13,7 @@ const Cards = () => {
       />
       <Card
         icon="f7:rocket-fill"
-        title="Alto rendimiento"
+        title="Creación y Optimizacion de Sistemas"
         description="Construimos plataformas desde cero personalizadas para sus requisitos y operaciones de la empresa. Nuestro proceso incluye una consulta inicial para analizar sus necesidades, el desarrollo y la entrega de la plataforma y el soporte técnico posterior a la instalación."
         link="services"
       />
@@ -33,7 +33,7 @@ function Card({ icon, title, description, link }: CardProps) {
   const {t} = useTranslation()
 
   return (
-    <div className="bg-white bg-opacity-25 lg:h-[474px] backdrop-filter flex flex-col px-[30px] py-[49px] max-w-[497px] rounded-xl gap-8 duration-300">
+    <div className="bg-white bg-opacity-25 lg:h-[474px] backdrop-filter flex flex-col justify-between px-[30px] py-[49px] max-w-[497px] rounded-xl gap-8 duration-300">
       <div className="flex items-center justify-center gap-5 sm:gap-5 lg:gap-4">
         <Icon
           icon={icon}

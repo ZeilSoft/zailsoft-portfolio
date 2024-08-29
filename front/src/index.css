@@ -17,11 +17,11 @@ body {
 }
 
 input {
-  @apply border-2 border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700;
+  @apply border-2 border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[#CF485F] focus:ring-1 focus:ring-[#CF485F];
 }
 
 textarea {
-  @apply border-2 border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-gray-700 focus:ring-1 focus:ring-gray-700;
+  @apply border-2 border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[#CF485F] focus:ring-1 focus:ring-[#CF485F];
 }
 
 label{
