@@ -1,11 +1,17 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
+import { useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 
 const NotFoundPage = () => {
   const { t } = useTranslation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  
   return (
-    <div className="flex flex-col gap-6 items-center justify-center min-h-screen text-black dark:text-white">
+    <div className="h-[75vh] flex flex-col px-6 py-14 md:px-8 gap-6 items-center justify-center text-black dark:text-white transition-colors duration-150">
       <Icon
         icon="system-uicons:cloud-disconnect"
         width="100"
@@ -19,7 +25,7 @@ const NotFoundPage = () => {
         className="text-[17.5px] font-semibold"
         to="/"
       >
-        <button className="flex  items-center justify-center gap-2 py-2.5 px-6 rounded-md bg-main hover:bg-main/80 text-light transition-colors duration-150">
+        <button className="flex items-center justify-center gap-2 py-2.5 px-6 rounded-md bg-main hover:bg-main/80 text-light transition-colors duration-150">
           <Icon
             icon="formkit:arrowleft"
             width="24"

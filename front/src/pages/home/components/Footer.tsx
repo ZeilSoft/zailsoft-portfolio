@@ -76,9 +76,6 @@ const Footer = () => {
               >
                 <Icon icon="ri:linkedin-fill" className=" w-6" />
               </Link>
-              {/* <div className="flex justify-center items-center shadow-lg shadow-main rounded-full p-[10px] w-10 h-auto">
-                <Icon icon="ri:linkedin-fill" className=" w-6" />
-              </div> */}
             </div>
           </div>
         </div>

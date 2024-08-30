@@ -10,6 +10,7 @@ const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return (
     <div className="flex flex-col gap-32 lg:gap-20 w-full max-w-7xl px-6 py-14 md:px-8 text-dark dark:text-light transition-colors duration-150">
       <section className="flex flex-col gap-16">

@@ -6,9 +6,11 @@ import { useEffect } from "react";
 
 const ContactPage = () => {
   const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return (
     <div className="text-dark dark:text-light flex flex-col gap-32 py-14 px-6 md:px-8">
       <section className="flex flex-col gap-10">

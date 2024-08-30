@@ -8,9 +8,11 @@ import { useEffect } from "react"
 
 const ServicesPage = () => {
   const {t} = useTranslation()
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   return (
     <div className="flex flex-col gap-16 max-w-7xl text-dark dark:text-light">
       <section className="flex flex-col items-center relative">
@@ -25,11 +27,11 @@ const ServicesPage = () => {
             />
           </div>
 
-          <h2 className="text-[52px] lg:text-[62px] text-center font-bold leading-[55px] transition-colors duration-150">
+          <h2 className="text-[52px] w-[300px] sm:w-[600px] lg:w-auto lg:text-[62px] text-center font-bold leading-[55px] transition-colors duration-150">
             {t("our-main")} <span className="text-main">{t("service")}</span>
           </h2>
 
-          <h3 className="text-center text-[20px] mt-0.5 transition-colors duration-150">{t("help")}</h3>
+          <h3 className="text-center text-[20px] mt-0.5 lg:mt-4 transition-colors duration-150">{t("help")}</h3>
         </div>
         
         <Services />
