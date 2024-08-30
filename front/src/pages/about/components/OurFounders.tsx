@@ -7,7 +7,7 @@ const OurFounders = () => {
         Our Founders
       </h3>
 
-      <div className="grid gap-14 sm:gap-x-0 lg:gap-7 xl:gap-14 grid-cols-1 sm:grid-cols-2 sm:w-[596px] sm:mx-auto xl:w-auto xl:mx-0 xl:grid-cols-4 justify-items-center">
+      <div className="grid gap-14 sm:gap-x-0 lg:gap-7 xl:gap-14 grid-cols-1 sm:grid-cols-2 sm:w-[596px] sm:mx-auto xl:w-auto xl:mx-0 xl:grid-cols-4 justify-items-center transition-colors duration-150">
         <Founder
           image="/founders/gabriel-nievas.webp"
           name="Gabriel Nievas"

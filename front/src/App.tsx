@@ -11,7 +11,7 @@ import "./index.css"
 
 function App() {
   return (
-    <main className="font-poppins">
+    <main className="font-poppins bg-light dark:bg-dark transition-colors duration-150">
       <section className="w-full flex flex-col justify-center items-center min-h-screen">
       {/* your_css_selector_here */}
         <Navbar />

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import SpainFlag from "../../../assets/flags/SpainFlag";
 import UnitedStatesFlag from "../../../assets/flags/UnitedStatesFlag";
+import DarkModeSwitcher from "../../../components/DarkModeSwitcher";
 
 
 const Navbar = () => {
@@ -54,14 +55,14 @@ const Navbar = () => {
   const { flag, text } = getFlagAndText();
 
   return (
-    <header className="sticky bg-[#0E100F] w-full top-0 z-50">
+    <header className="sticky bg-[#0F0F0F] w-full top-0 z-50">
       <nav className="mx-auto max-w-7xl px-6 md:px-8 py-5 w-full">
         <div className="flex items-center justify-between z-10 w-full">
           {/* Open menu button */}
           <div className="items-center md:hidden">
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md text-white hover:bg-main/80 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md text-light hover:bg-main/80 hover:text-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-light"
               aria-controls="mobile-menu"
               aria-expanded={open}
               onClick={() => setOpen(!open)}
@@ -92,7 +93,7 @@ const Navbar = () => {
 
               {/* <NavLink
                 to="/"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-light'}`}
               >
                 {t('home')}
                 <span
@@ -104,7 +105,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/about"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-light'}`}
               >
                 {t('about-us')}
                 <span
@@ -117,7 +118,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/services"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-light'}`}
               >
                 {t('services')}
                 <span
@@ -130,7 +131,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/contact"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-light'}`}
               >
                 {t('contact-us')}
                 <span
@@ -143,7 +144,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-light'}`}
               >
                 {t('home')}
                 <span
@@ -155,7 +156,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/about"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-light'}`}
               >
                 {t('about-us')}
                 <span
@@ -167,7 +168,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/services"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-light'}`}
               >
                 {t('services')}
                 <span
@@ -179,7 +180,7 @@ const Navbar = () => {
 
               <NavLink
                 to="/contact"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-white'}`}
+                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-light'}`}
               >
                 {t('contact-us')}
                 <span
@@ -198,7 +199,7 @@ const Navbar = () => {
                   `rounded-md px-3 py-2 text-sm font-medium ${
                     isActive
                       ? "text-main border-b-2 border-main"
-                      : "text-white hover:text-main"
+                      : "text-light hover:text-main"
                   } transition-colors duration-300`
                 }
               >
@@ -211,7 +212,7 @@ const Navbar = () => {
                   `rounded-md px-3 py-2 text-sm font-medium ${
                     isActive
                       ? "text-main border-b-2 border-main"
-                      : "text-white hover:text-main"
+                      : "text-light hover:text-main"
                   } transition-colors duration-300`
                 }
               >
@@ -224,7 +225,7 @@ const Navbar = () => {
                   `rounded-md px-3 py-2 text-sm font-medium ${
                     isActive
                       ? "text-main border-b-2 border-main"
-                      : "text-white hover:text-main"
+                      : "text-light hover:text-main"
                   } transition-colors duration-300`
                 }
               >
@@ -237,7 +238,7 @@ const Navbar = () => {
                   `rounded-md px-3 py-2 text-sm font-medium ${
                     isActive
                       ? "text-main border-b-2 border-main"
-                      : "text-white hover:text-main"
+                      : "text-light hover:text-main"
                   } transition-colors duration-300`
                 }
               >
@@ -248,42 +249,46 @@ const Navbar = () => {
           </div>
 
           {/* Current language Flag and Text */}
-          <div
-            ref={langMenuRef}
-            className="flex flex-row gap-1 md:gap-2 justify-center items-center md:ml-8 lg:ml-12 relative cursor-pointer text-sm mr-[-2px] md:mr-0"
-            onClick={() => setLangMenuOpen(!langMenuOpen)}
-          >
-            {flag}
-            <div className="flex flex-row gap-2 justify-start">
-              <p className="hidden md:flex text-white leading-none">{text}</p>
-            </div>
-
-            <Icon className="text-white mb-[3px]" icon="ph:caret-down-bold" width="15" height="15" />
-
-            {/* Languages Modal */}
+          <div className="flex flex-row gap-4">
             <div
-              className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0E100F] rounded-md w-32 p-2 transition-all duration-300 ${
-                langMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-              }`}
+              ref={langMenuRef}
+              className="flex flex-row gap-1 md:gap-2 justify-center items-center md:ml-8 lg:ml-12 relative cursor-pointer text-sm mr-[-2px] md:mr-0"
+              onClick={() => setLangMenuOpen(!langMenuOpen)}
             >
-              <div className="flex flex-col gap-2">
-                <button
-                  className="w-full text-left text-white hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
-                  onClick={() => handleLanguageChange('es', <SpainFlag />, 'Español')}
-                >
-                  <SpainFlag />
-                  <p>Español</p>
-                </button>
+              {flag}
+              <div className="flex flex-row gap-2 justify-start">
+                <p className="hidden md:flex text-light leading-none">{text}</p>
+              </div>
 
-                <button
-                  className="w-full text-left text-white hover:text-white rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
-                  onClick={() => handleLanguageChange('en', <UnitedStatesFlag />, 'English')}
-                >
-                  <UnitedStatesFlag />
-                  <p>English</p>
-                </button>
+              <Icon className="text-light mb-[3px]" icon="ph:caret-down-bold" width="15" height="15" />
+
+              {/* Languages Modal */}
+              <div
+                className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0E100F] rounded-md w-32 p-2 transition-all duration-300 ${
+                  langMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                }`}
+              >
+                <div className="flex flex-col gap-2">
+                  <button
+                    className="w-full text-left text-light hover:text-light rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                    onClick={() => handleLanguageChange('es', <SpainFlag />, 'Español')}
+                  >
+                    <SpainFlag />
+                    <p>Español</p>
+                  </button>
+
+                  <button
+                    className="w-full text-left text-light hover:text-light rounded-sm hover:bg-main/80 px-2 py-1 transition-colors duration-150 flex flex-row gap-2 items-center"
+                    onClick={() => handleLanguageChange('en', <UnitedStatesFlag />, 'English')}
+                  >
+                    <UnitedStatesFlag />
+                    <p>English</p>
+                  </button>
+                </div>
               </div>
             </div>
+
+            <DarkModeSwitcher className="hidden md:flex" />
           </div>
         </div>
 
@@ -297,21 +302,24 @@ const Navbar = () => {
             className={`bg-[#0E100F] w-[280px] h-full p-6 flex flex-col gap-6 transition-all duration-300 ${
               open ? "translate-x-0" : "-translate-x-full"
             }`}
-          >
-            <button
-              type="button"
-              className="self-end"
-              onClick={() => setOpen(false)}
-            >
-              <Icon className="text-white" icon="material-symbols:close" width="24" height="24" />
-            </button>
+          > 
+            <div className="flex flex-row items-center justify-between">
+              <DarkModeSwitcher className="w-fit ml-[8px]" />
+              <button
+                type="button"
+                className="self-start"
+                onClick={() => setOpen(false)}
+              >
+                <Icon className="text-light" icon="material-symbols:close" width="24" height="24" />
+              </button>
+            </div>
 
             <div className="flex flex-col gap-4">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-light" : "text-light hover:bg-main/80 hover:text-light"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -323,7 +331,7 @@ const Navbar = () => {
                 to="about"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-light" : "text-light hover:bg-main/80 hover:text-light"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -335,7 +343,7 @@ const Navbar = () => {
                 to="services"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-light" : "text-light hover:bg-main/80 hover:text-light"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
@@ -347,13 +355,14 @@ const Navbar = () => {
                 to="contact"
                 className={({ isActive }) =>
                   `block rounded-md px-3 py-2 text-base font-medium ${
-                    isActive ? "bg-main text-white" : "text-white hover:bg-main/80 hover:text-white"
+                    isActive ? "bg-main text-light" : "text-light hover:bg-main/80 hover:text-light"
                   } transition-colors duration-300`
                 }
                 onClick={() => setOpen(false)}
               >
                 {t('contact-us')}
               </NavLink>
+
             </div>
           </div>
         </div>

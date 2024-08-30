@@ -4,8 +4,8 @@ import OurValues from "./components/OurValues"
 
 const AboutPage = () => {
   return (
-    <div className="text-white flex flex-col gap-20 py-14 px-6 md:px-8 max-w-7xl">
-      <section className="flex flex-col gap-4">
+    <div className="text-black dark:text-light flex flex-col gap-20 py-14 px-6 md:px-8 max-w-7xl">
+      <section className="flex flex-col gap-4 transition-colors duration-150">
         <h1 className="text-[50px] lg:text-[64px] font-bold text-main">
           Sobre nosotros
         </h1>
@@ -21,7 +21,7 @@ const AboutPage = () => {
         </p>
       </section>
 
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 transition-colors duration-150">
         <h3 className="text-[35px] lg:text-[45px] font-bold text-main">
           Cultura
         </h3>

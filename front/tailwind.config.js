@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         "main": "#cf485f",
+        "light": "#F9F7EE",
+        "dark": "#000000",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"]
@@ -23,5 +25,5 @@ export default {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
-

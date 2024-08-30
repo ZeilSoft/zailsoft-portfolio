@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   return (
     <section
-      className="flex flex-col gap-4 w-full "
+      className="flex flex-col gap-4 w-full transition-colors duration-150"
       id="contact"
     >
       <form
@@ -48,7 +48,7 @@ const ContactForm = () => {
         >
           <label>{t("fullname")}</label>
           <input
-            className="text-white bg-[#0E100F] border-none"
+            className="text-dark dark:text-light bg-main bg-opacity-25 border-none"
             type="text"
             placeholder={t("fullname")}
             {...formik.getFieldProps("name")}
@@ -70,7 +70,7 @@ const ContactForm = () => {
         >
           <label>{t("email")}</label>
           <input
-            className="text-white bg-[#0E100F] border-none"
+            className="text-dark dark:text-light bg-main/25 border-none"
             type="email"
             placeholder={t("email")}
             {...formik.getFieldProps("email")}
@@ -92,7 +92,7 @@ const ContactForm = () => {
         >
           <label>{t("subject")}</label>
           <input
-            className="text-white bg-[#0E100F] border-none"
+            className="text-dark dark:text-light bg-main/25 border-none"
             type="text"
             placeholder={t("subject")}
             {...formik.getFieldProps("subject")}
@@ -114,7 +114,7 @@ const ContactForm = () => {
         >
           <label>{t("description")}</label>
           <textarea
-            className="text-white bg-[#0E100F] border-none"
+            className="text-dark dark:text-light bg-main/25 border-none"
             placeholder={t("description")}
             {...formik.getFieldProps("description")}
             disabled={isPending || data}
@@ -130,7 +130,7 @@ const ContactForm = () => {
         </div>
 
         <button
-          className="w-full bg-main hover:bg-main/80 transition-colors duration-300 py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-main hover:bg-main/80 transition-colors duration-150 py-2 text-white rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
           type="submit"
           disabled={isPending || data}
         >

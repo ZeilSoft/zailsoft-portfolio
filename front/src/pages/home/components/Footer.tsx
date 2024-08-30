@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-[#0E100F] z-20 text-white w-full">
+    <div className="bg-[#0F0F0F] z-20 text-light w-full">
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-4 items-start justify-between mx-auto max-w-7xl w-full px-6 md:px-8 py-10">
         <div className="flex flex-col gap-2 mx-auto text-center lg:text-left lg:mx-0">
           <div className="flex flex-row justify-center items-center lg:justify-start gap-2">
@@ -85,11 +85,11 @@ const Footer = () => {
       </div>
 
       <div className="max-w-[1280px] mx-auto px-6 md:px-8">
-        <hr className="h-[0.5px] mb-4 bg-white border-0 "></hr>
+        <hr className="h-[0.5px] mb-4 bg-light border-0 "></hr>
         <div className="text-center font-semibold text-[15px]">
           {t("help")} <Link to="/contact" className="text-main hover:underline cursor-pointer">{t("talk-to")} {t("us")}.</Link>
         </div>
-        <hr className="h-[0.5px] mt-4 bg-white border-0"></hr>
+        <hr className="h-[0.5px] mt-4 bg-light border-0"></hr>
       </div>
 
       <div className="flex justify-center mx-auto p-[30px] text-sm text-center">

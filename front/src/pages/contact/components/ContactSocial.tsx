@@ -44,7 +44,7 @@ import { Icon } from "@iconify/react/dist/iconify.js"
 
 const ContactSocial = () => {
   return (
-    <div className="text-[17px] flex flex-col gap-4 w-fit mx-auto justify-between sm:w-[600px] sm:flex-row sm:flex-wrap sm:gap-x-10 sm:justify-center lg:justify-between lg:flex-row lg:mx-0 lg:w-full sm:text-[20px]">
+    <div className="text-[17px] flex flex-col gap-4 w-fit mx-auto justify-between sm:w-[600px] sm:flex-row sm:flex-wrap sm:gap-x-10 sm:justify-center lg:justify-between lg:flex-row lg:mx-0 lg:w-full sm:text-[20px] transition-colors duration-150">
       <div className="flex items-center gap-5 lg:gap-3">
         <Icon
           className="lg:-ml-1.5"

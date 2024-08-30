@@ -7,14 +7,14 @@ const ContactPage = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-white flex flex-col gap-32 py-14 px-6 md:px-8">
+    <div className="text-dark dark:text-light flex flex-col gap-32 py-14 px-6 md:px-8">
       <section className="flex flex-col gap-10">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[40px] lg:text-[55px] leading-tight font-bold text-center">
+          <h2 className="text-[40px] lg:text-[55px] leading-tight font-bold text-center transition-colors duration-150">
             {t("talk-to")} <strong className="text-main">{t("us")}</strong>
           </h2>
 
-          <h2 className="text-lg font-medium text-center">
+          <h2 className="text-lg font-medium text-center transition-colors duration-150">
             {t("help")}
           </h2>
         </div>

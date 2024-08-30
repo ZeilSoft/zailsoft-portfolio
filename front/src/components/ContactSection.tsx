@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const ContactSection = () => {
   const { t } = useTranslation()
   return (
-    <section className="bg-white bg-opacity-25 backdrop-filter flex lg:flex-row flex-col rounded-xl gap-8 items-center justify-between p-[30px] lg:gap-0 lg:py-[50px] lg:px-[100px] text-white lg:max-w-[1216px] xl:w-[1216px]">
+    <section className="bg-main bg-opacity-25 backdrop-filter flex lg:flex-row flex-col rounded-xl gap-8 items-center justify-between p-[30px] lg:gap-0 lg:py-[50px] lg:px-[100px] text-black dark:text-light lg:max-w-[1216px] xl:w-[1216px] transition-colors duration-150">
       <div className="flex flex-col">
         <div className="flex flex-col gap-3 lg:w-[500px]">
           <h3 className="text-xl text-main/80 lg:text-[29px] font-bold">{t("talk")}</h3>
@@ -18,7 +18,7 @@ const ContactSection = () => {
       <div className="flex items-center justify-center">
         <Link
           to="contact"
-          className="py-5 px-[30px] xsm:px-[50px] font-semibold rounded-lg transition-colors duration-300 bg-main hover:bg-main/80 text-xl lg:text-2xl"
+          className="bg-main hover:bg-main/80 text-light transition-colors duration-150 py-5 px-[30px] font-semibold rounded-lg text-xl xsm:px-[50px] lg:text-2xl"
         >
           {t("contact-us")}
         </Link>
@@ -26,4 +26,5 @@ const ContactSection = () => {
     </section>
   )
 }
+
 export default ContactSection

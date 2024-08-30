@@ -3,10 +3,10 @@ import DashedCurve from "../../../utils/dashed-curve"
 
 const Summary = () => {
   return (
-    <div className="flex flex-col w-full text-white gap-16 xl:gap-[136px] relative">
+    <div className="flex flex-col w-full text-black dark:text-light transition-colors duration-150 gap-16 xl:gap-[136px] relative">
       <div className="absolute w-[55%] top-[-64px] left-[-13px] z-10 hidden xl:block">
         <DashedCurve />
-      </div>
+      </div>  
 
       {/* First */}
       <div className="flex flex-col items-center md:flex-row gap-4 z-20">
@@ -17,11 +17,11 @@ const Summary = () => {
                 icon="formkit:people"
                 width="24"
                 height="24"
-                className="text-white"
+                className="text-light"
               />
             </div>
 
-            <h3 className="text-[17px] text-white">¿Quienes somos?</h3>
+            <h3 className="text-[17px]">¿Quienes somos?</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] xl:max-w-[80%]">
@@ -57,11 +57,11 @@ const Summary = () => {
                 icon="fa6-solid:face-smile"
                 width="24"
                 height="24"
-                className="text-white"
+                className="text-light"
               />
             </div>
 
-            <h3 className="text-[17px] text-white">Nuestro enfoque</h3>
+            <h3 className="text-[17px]">Nuestro enfoque</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
@@ -92,11 +92,11 @@ const Summary = () => {
                 icon="streamline:desktop-code"
                 width="24"
                 height="24"
-                className="text-white"
+                className="text-light"
               />
             </div>
 
-            <h3 className="text-[17px] text-white">Nuestras tecnologias</h3>
+            <h3 className="text-[17px]">Nuestras tecnologias</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
@@ -118,4 +118,5 @@ const Summary = () => {
     </div>
   )
 }
+
 export default Summary
