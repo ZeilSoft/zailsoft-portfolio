@@ -17,7 +17,7 @@ const ContactSection = () => {
 
       <div className="flex items-center justify-center">
         <Link
-          to="contact"
+          to="/contact"
           className="bg-main hover:bg-main/80 text-light transition-colors duration-150 py-5 px-[30px] font-semibold rounded-lg text-xl xsm:px-[50px] lg:text-2xl"
         >
           {t("contact-us")}

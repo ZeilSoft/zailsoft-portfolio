@@ -113,7 +113,7 @@ const Summary = () => {
           </div>
         </div>
 
-        <img src="/home/tech.svg" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
+        <img src="/home/tech.webp" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
       </div>
     </div>
   )
