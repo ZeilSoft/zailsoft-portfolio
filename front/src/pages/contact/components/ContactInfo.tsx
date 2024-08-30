@@ -25,7 +25,7 @@ const ContactInfo = () => {
         </div>
 
         {/* Map */}
-        <div className="w-[270px] h-[170px] sm:w-[550px] sm:h-[350px] lg:w-[530px] lg:h-[330px] xl:w-[620px] xl:h-96 bg-cover bg-no-repeat bg-[url('/mapLight.webp')] dark:bg-[url('/mapDark.webp')]" />
+        <div className="w-[270px] h-[170px] sm:w-[550px] sm:h-[350px] lg:w-[530px] lg:h-[340px] xl:w-[580px] xl:h-[370px] bg-cover bg-no-repeat bg-[url('/mapLight.webp')] dark:bg-[url('/mapDark.webp')]" />
         {/* <img
           // src="/mapDark.webp"
           src="/mapLight.webp"
