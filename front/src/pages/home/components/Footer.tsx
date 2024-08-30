@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex flex-col items-center lg:items-start gap-2">
               <Link 
                 className="hover:underline hover:text-main transition-colors duration-150" 
-                to="/home"
+                to="/"
               >
                 {t("home")}
               </Link>

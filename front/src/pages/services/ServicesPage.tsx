@@ -4,9 +4,13 @@ import { Services } from "./components/Services"
 import MainService from "./components/MainService"
 import OptimizeOurWork from "./components/OptimizeOurWork"
 import { useTranslation } from "react-i18next"
+import { useEffect } from "react"
 
 const ServicesPage = () => {
   const {t} = useTranslation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="flex flex-col gap-16 max-w-7xl text-dark dark:text-light">
       <section className="flex flex-col items-center relative">
