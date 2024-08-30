@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   const { t } = useTranslation();
+
   return (
     <div className="bg-[#0F0F0F] z-20 text-light w-full">
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-4 items-start justify-between mx-auto max-w-7xl w-full px-6 md:px-8 py-10">
