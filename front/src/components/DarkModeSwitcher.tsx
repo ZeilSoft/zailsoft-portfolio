@@ -12,13 +12,13 @@ const DarkModeSwitcher: React.FC<DarkModeSwitcherProps> = ({ className = '' }) =
   return (
     <button
       onClick={toggleTheme}
-      className={`p-2 rounded-full bg-[#F9F7EE] dark:bg-black transition-colors duration-150 ${className}`}
+      className={`p-2 rounded-full bg-[#F9F7EE] text-dark dark:text-light dark:bg-black transition-colors duration-150 ${className}`}
       aria-label="Toggle Dark Mode"
     >
       {theme === 'dark' ? (
-        <Icon icon="ph:sun" width="24" height="24" className='text-light' />
+        <Icon icon="ph:sun" width="24" height="24" />
       ) : (
-        <Icon icon="ph:moon" width="24" height="24" className='text-dark' />
+        <Icon icon="ph:moon" width="24" height="24" />
       )}
     </button>
   );

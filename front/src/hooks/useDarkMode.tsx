@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
 const useDarkMode = () => {
-  const [theme, setTheme] = useState<string>(
-    localStorage.getItem('theme') || 'system'
-  );
+  const themeStorage = localStorage.getItem('theme');
+  if(!themeStorage) localStorage.setItem('theme', 'system');
+  const [theme, setTheme] = useState<string>(themeStorage || 'system');
 
   const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
