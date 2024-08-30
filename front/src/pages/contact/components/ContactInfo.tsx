@@ -25,12 +25,14 @@ const ContactInfo = () => {
         </div>
 
         {/* Map */}
-        <div className="w-[270px] h-[170px] sm:w-[550px] sm:h-[350px] lg:w-[530px] lg:h-[340px] xl:w-[580px] xl:h-[370px] bg-cover bg-no-repeat bg-[url('/mapLight.webp')] dark:bg-[url('/mapDark.webp')]" />
-        {/* <img
-          // src="/mapDark.webp"
-          src="/mapLight.webp"
-          alt="map"
-        /> */}
+        <div className="w-[270px] h-[170px] 2xsm:w-[312px] 2xsm:h-[200px] xsm:w-[367px] xsm:h-[235px] sm:w-[600px] sm:h-[385px] md:w-[640px] md:h-[411px] lg:w-[536px] lg:h-[344px] xl:w-[572px] xl:h-[367px] 2xl:w-[640px] 2xl:h-[411px] bg-cover bg-no-repeat bg-[url('/mapLight.webp')] dark:bg-[url('/mapDark.webp')]" />
+        {/* <div>
+          <img
+            src="/mapDark.webp"
+            // src="/mapLight.webp"
+            alt="map"
+          />
+        </div> */}
       </div>
     </div>
   )
