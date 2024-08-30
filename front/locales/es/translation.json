@@ -30,5 +30,8 @@
   "description-required": "La descripción es requerida",
   "our-main": "Nuestro principal",
   "error-sending-email": "Error al enviar el email",
-  "send-email" : "Hemos recibido correctamente su email"
+  "send-email" : "Hemos recibido correctamente su email",
+  "not-found": "Página no encontrada",
+  "not-found-description": "Lo sentimos, la página que buscas no existe.",
+  "not-found-button": "Volver al inicio"
 }
