@@ -1,7 +1,7 @@
 const UnitedStatesFlag = () => {
   return (
     <svg width="20" viewBox="0 0 513 342" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_301_138)">
+      <g clipPath="url(#clip0_301_138)">
       <path d="M0 0H513V342H0V0Z" fill="white"/>
       <path d="M0 0H513V26.3H0V0ZM0 52.6H513V78.9H0V52.6ZM0 105.2H513V131.5H0V105.2ZM0 157.8H513V184.1H0V157.8ZM0 210.5H513V236.8H0V210.5ZM0 263.1H513V289.4H0V263.1ZM0 315.7H513V342H0V315.7Z" fill="#D80027"/>
       <path d="M0 0H256.5V184.1H0V0Z" fill="#2E52B2"/>

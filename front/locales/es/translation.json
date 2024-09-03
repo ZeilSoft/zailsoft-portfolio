@@ -2,15 +2,101 @@
   "home": "Inicio",
   "about-us": "¿Quienes somos?",
   "services": "Servicios",
-  "service":"Servicio",
-  "work": "Trabajo",
   "projects": "Proyectos",
   "contact-us": "Contacto",
+
+  "hero": "En Zeilsoft creamos soluciones personalizadas que transforman tus necesidades e ideas en un producto o servicio que genere impacto. Trabajemos juntos para convertir tu visión en realidad.",
+  "contact-us2": "Contáctanos",
+
+  "mobile-app": "Desarrollo de aplicaciones móviles",
+  "web-app": "Desarrollo de aplicaciones web",
+  "systems": "Creación y optimizacion de Sistemas",
+  "ux/ui-design": "Diseño UX/UI: Interfaces intuitivas y atractivas",
+
+  "specialize": "Nos especializamos en la creacion de Software a medida",
+  "specialize-description": "Desarrollamos software personalizadas que se adaptan a las necesidades específicas de tu negocio, brindando eficiencia, escalabilidad, calidad, funcionalidad a medida y sobre todo, resultados sobresalientes.",
+
+  "mission": "Tenemos una mision clara:",
+  "mission-description": "Crear productos y servicios que generen impacto en tu labor diario.",
+
+  "who-we-are": "¿Quiénes somos?",
+  "multidisciplinary-team": "Equipo multidisciplinario",
+  "who-title": "especializado en desarrollo de software, tecnología, productos, sistemas, servicios y operaciones.",
+  "who-description": "Esto nos permite estar calificados y preparados para ofrecer una solución integral adaptada a cada cliente, con un enfoque en la excelencia y la innovación en cada proyecto.",
+
+  "our-approach": "Nuestro enfoque",
+  "deliver": "Entregamos",
+  "approach-title": "software con ingeniería ágil",
+  "approach-description": "Ofrecemos software excepcional utilizando ingeniería ágil. Con una enfoque orientado a la adaptacion, dinamismo e implementación rápida, garantizamos soluciones de alta calidad. Nos dedicamos a entender a fondo cada problema y colaboramos estrechamente con nuestros clientes para desarrollar soluciones efectivas que realmente marquen la diferencia.",
+
+  "our-technologies": "Nuestras tecnologias",
+  "we-specialize": "Nos especializamos",
+  "technologies-title": "en diferentes tecnologias.",
+  "technologies-description": "Algunas de las tecnologías en las que nos especializamos son: Javascript, Typescript, React, Next, Node, Nest, Java, SQL, React Native.",
+
+  "view-more": "Ver más",
+  "development": "Desarrollo de aplicaciones web y móviles",
+  "development-description": "Creamos software a medida desde cero, diseñadas específicamente para satisfacer los requisitos y operaciones de tu empresa. Nuestro enfoque integral abarca una consulta inicial para analizar y comprender tus necesidades, el desarrollo y la entrega del software, y un soporte técnico post-implementación para garantizar el éxito a largo plazo.",
+  "systems-description": "Desarrollamos sistemas a medida y optimizamos los existentes para mejorar su rendimiento y eficiencia. Desde el diseño inicial hasta la implementación, nos enfocamos en crear soluciones robustas y escalables. Analizamos y refinamos sistemas para adaptarlos a las necesidades cambiantes de tu negocio, asegurando una operación fluida y efectiva.",
+
+  "about-us2": "Sobre nosotros",
+  "about-us2-title": "Detrás de cualquier gran producto, hay un gran",
+  "team": "equipo",
+  "about-us2-description": "Promovemos la cooperación en equipo, la transparencia y el disfrute del proceso como componentes clave de un resultado exitoso.",
+
+  "culture-title": "Cultura",
+  "culture-description": "Fomentamos un ambiente de trabajo colaborativo donde cada miembro del equipo se siente valorado y motivado. Creemos en la confianza, la comunicación abierta, el trabajo en equipo y el aprendizaje continuo como pilares fundamentales para el crecimiento personal y profesional. Nuestro enfoque se centra en crear un espacio que aliente la innovación y permite a cada miembro aportar ideas creativas. Promovemos el equilibrio entre el trabajo y la vida personal, asegurando que cada proyecto sea una experiencia enriquecedora y satisfactoria para todos.",
+
+  "values-title": "Nuestros valores",
+  "values-description": "Nos dedicamos a incorporar nuestros valores fundamentales en cada aspecto de nuestro trabajo. Creemos que nuestra dedicación a estos principios no solo nos distingue, sino que también nos capacita para ofrecer un servicio excepcional. Estos valores guían nuestra manera de operar, asegurar la calidad y construir relaciones duraderas con nuestros clientes, garantizando resultados sobresalientes en cada proyecto.",
+  "teamwork": "Trabajo en equipo",
+  "innovation": "Innovación",
+  "continuous-improvement": "Mejora continua",
+  "integrity": "Integridad",
+  "adaptability": "Adaptabilidad",
+  "empathy": "Empatia",
+  "trust": "Confianza",
+  "responsibility": "Responsabilidad",
+
+  "our-founders": "Nuestros fundadores",
+  "founder": "Fundador",
+
+  "our-main": "Nuestro principal",
+  "help": "¿Cómo podemos ayudarte?",
+
+  "web-development": "Desarrollo web",
+  "web-development-description": "Desarrollamos sitios web personalizados con tecnologías de front-end y back-end de alta escalabilidad, asegurando rendimiento, seguridad y una experiencia de usuario superior.",
+
+  "mobile-development": "Desarrollo móvil",
+  "mobile-development-description": "Creamos aplicaciones móviles personalizadas con tecnologías avanzadas, optimizadas para ofrecer un alto rendimiento, seguridad y una experiencia de usuario intuitiva en todas las plataformas.",
+
+  "systems2": "Creación, actualización y mantenimiento de Sistemas",
+  "systems2-description": "Desarrollamos y mejoramos sistemas para garantizar que se mantengan actualizados y eficientes. Ofrecemos soluciones personalizadas que evolucionan con tus necesidades y aseguran un funcionamiento continuo y confiable.",
+
+  "ux/ui-design2": "Diseño UX/UI",
+  "ux/ui-design2-description": "Diseñamos interfaces intuitivas y estéticamente atractivas que mejoran la usabilidad y elevan la satisfacción del usuario.",
+
+  "tech-review": "Consultoría tecnológica",
+  "tech-review-description": "A veces, es necesario obtener una perspectiva externa de tu plataforma. Asesoramos a empresas para optimizar su infraestructura tecnológica y adoptar soluciones nuevas de manera eficiente, escalable y segura.",
+
+  "support": "Soporte Técnico y Mantenimiento",
+  "support-description": "Ofrecemos soporte continuo y mantenimiento técnico para garantizar el funcionamiento óptimo de tus aplicaciones y sistemas.",
+
+  "main-service-title": "en el desarollo de Software personalizadas para garantizar eficiencia y calidad.",
+  "main-service-description": "Creamos soluciones personalizadas que se ajustan exactamente a las necesidades de tu negocio, garantizando eficiencia, escalabilidad y alta calidad. Nuestro enfoque está en ofrecer funcionalidades específicas y resultados sobresalientes que impulsen el éxito de tu empresa.",
+
+  "our-work": "nuestro trabajo",
+  "how-we-optimize": "Cómo Optimizamos",
+  "how-we-optimize-description": "En ZeilSoft, además de las diversas tecnologías que moldean nuestros proyectos, utilizamos un conjunto de herramientas para agilizar nuestros procesos cotidianos. Nuestro kit de herramientas incluye GitHub, Notion, Trello y Discord. Estas herramientas se integran eficazmente, facilitando el intercambio de ideas, la gestión del tiempo, la comunicación, la planificación, la colaboración y el desarrollo. En conjunto, apoyan las metodologías de trabajo de ZeilSoft, promoviendo la eficiencia y la coordinación sin interrupciones.",
+  
+
+
+  "service":"Servicio",
+  "work": "Trabajo",
   "follow-us": "Siguenos",
   "talk-to": "Habla con",
   "talk": "¡Hablemos!",
   "us": "nosotros",
-  "help": "¿Cómo podemos ayudarte?",
   "fullname": "Nombre completo",
   "email": "Correo electrónico",
   "subject": "Asunto",
@@ -20,15 +106,13 @@
   "collaborate": "juntos",
   "talk-us": "¡Habla con nosotros!",
   "copyright": "Copyright © 2024 ZeilSoft. Todos los derechos reservados.",
-  "speech": "Juntos potenciamos la revolución Fintech.",
+  "speech": "Juntos transformamos tus ideas en Software de excelencia",
   "work-together": "¡Trabajemos juntos!",
-  "see-more": "Ver más",
   "name-required": "El nombre es requerido",
   "email-invalid": "El email no es válido",
   "email-required": "El email es requerido",
   "subject-required": "El asunto es requerido",
   "description-required": "La descripción es requerida",
-  "our-main": "Nuestro principal",
   "error-sending-email": "Error al enviar el email",
   "send-email" : "Hemos recibido correctamente su email",
   "not-found": "Página no encontrada",

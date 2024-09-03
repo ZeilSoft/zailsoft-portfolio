@@ -5,8 +5,11 @@ import Hero from "./components/Hero"
 import Info from "./components/Info"
 import Specialize from "./components/Specialize"
 import Summary from "./components/Summary"
+import { useTranslation } from "react-i18next"
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -23,8 +26,9 @@ const HomePage = () => {
       </section>
 
       <section className="flex flex-col gap-4 justify-center items-center font-semibold text-[26px] leading-[35px] lg:text-[33px]">
-        <p className="text-center">We have a clear mission:</p>
-        <p className="text-center">Create products and services that generate an impact.</p>
+        {/* {t("mission")} */}
+        <p className="text-center">{t("mission")}</p>
+        <p className="text-center">{t("mission-description")}</p>
       </section>
 
       <section className="">

@@ -1,13 +1,13 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
 import ContactSection from "../../components/ContactSection"
-import { Services } from "./components/Services"
 import MainService from "./components/MainService"
 import OptimizeOurWork from "./components/OptimizeOurWork"
 import { useTranslation } from "react-i18next"
 import { useEffect } from "react"
+import Services from "./components/Services"
 
 const ServicesPage = () => {
-  const {t} = useTranslation()
+  const {t} = useTranslation();
 
   useEffect(() => {
     window.scrollTo(0, 0)

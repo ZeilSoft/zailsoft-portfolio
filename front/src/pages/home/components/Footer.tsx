@@ -51,12 +51,6 @@ const Footer = () => {
               >
                 {t("services")}
               </Link>
-              {/* <Link 
-                className="hover:underline" 
-                to="/projects"
-              >
-                Proyectos
-              </Link> */}
             </div>
           </div>
 

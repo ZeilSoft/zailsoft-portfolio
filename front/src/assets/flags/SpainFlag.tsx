@@ -1,7 +1,7 @@
 const SpainFlag = () => {
   return (
     <svg width="20" viewBox="0 0 513 342" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_301_1272)">
+      <g clipPath="url(#clip0_301_1272)">
       <path d="M0 0.240234H512V342.24H0V0.240234Z" fill="white"/>
       <path d="M0 0.240234H512V91.4402H0V0.240234ZM0 251.04H512V342.24H0V251.04Z" fill="#D03433"/>
       <path d="M0 91.2402H512V251.24H0V91.2402Z" fill="#FBCA46"/>

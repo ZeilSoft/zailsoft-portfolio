@@ -1,9 +1,13 @@
 import { Icon } from "@iconify/react/dist/iconify.js"
 import DashedCurve from "../../../utils/dashed-curve"
+import { useTranslation } from "react-i18next";
 
 const Summary = () => {
+  const { t, i18n } = useTranslation();
+  const isSpanish = i18n.language === 'es';
+
   return (
-    <div className="flex flex-col w-full text-black dark:text-light transition-colors duration-150 gap-16 xl:gap-[136px] relative">
+    <div className={`flex flex-col w-full text-black dark:text-light transition-colors duration-150 relative gap-16 ${isSpanish ? 'xl:gap-[116px]' : 'xl:gap-[106px]'}`}>
       <div className="absolute w-[55%] top-[-64px] left-[-13px] z-10 hidden xl:block">
         <DashedCurve />
       </div>  
@@ -21,26 +25,16 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-[17px]">¿Quienes somos?</h3>
+            <h3 className="text-[17px]">{t("who-we-are")}</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] xl:max-w-[80%]">
-            <span className="text-main">
-              Equipo multidisciplinario
-            </span>{" "}
-            con expertos en fintech, tecnología, negocios, productos y
-            operaciones.
+            <span className="text-main">{t("multidisciplinary-team")}</span> {t("who-title")}
           </h4>
 
           <div className="text-base leading-[27px] xl:max-w-[70%]">
             <p>
-              Esto nos permite estar calificados y preparados para ofrecer una
-              solución integral.
-            </p>
-
-            <p>
-              Nuestras oficinas en Buenos Aires y Cordoba nos permiten cubrir todas
-              las zonas horarias para mejorar la cooperación entre equipos.
+              {t("who-description")}
             </p>
           </div>
         </div>
@@ -61,23 +55,16 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-[17px]">Nuestro enfoque</h3>
+            <h3 className="text-[17px]">{t("our-approach")}</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
-            <span className="text-main">Entregamos</span> gran sofware
-            con la mejor tecnología
+            <span className="text-main">{t("deliver")}</span> {t("approach-title")}
           </h4>
 
-          <div className="text-base leading-[27px] lg:max-w-[70%]">
-            <p>
-              Con una mentalidad de puesta en marcha, ofrecemos un gran software
-              con ingeniería ágil. Puede confiar en nosotros para construir algo
-              con impacto de una manera rápida y con un alto nivel de calidad.
-              Nos enfocamos en comprender un problema y trabajamos junto con
-              nuestros clientes para construir una solución y hacer que suceda.
-            </p>
-          </div>
+          <p className="text-base leading-[27px] lg:max-w-[80%]">
+            {t("approach-description")}
+          </p>
         </div>
 
         <img src="/home/software.svg" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />
@@ -96,21 +83,16 @@ const Summary = () => {
               />
             </div>
 
-            <h3 className="text-[17px]">Nuestras tecnologias</h3>
+            <h3 className="text-[17px]">{t("our-technologies")}</h3>
           </div>
 
           <h4 className="text-[26px] leading-[1.3] font-semibold lg:text-[30px] lg:leading-[51px] lg:max-w-[80%]">
-            <span className="text-main leading-5">Nos especializamos</span> con
-            expertos en fintech, tecnología, negocios, productos y operaciones.
+            <span className="text-main leading-5">{t("we-specialize")}</span> {t("technologies-title")}
           </h4>
 
-          <div className="text-base leading-[27px] lg:max-w-[70%]">
-            <p>
-              Algunas de las tecnologías en las que nos especializamos son:
-              Javascript, Typescript, Node.js, NestJs, Ruby, React y React
-              Native.
-            </p>
-          </div>
+          <p className="text-base leading-[27px] lg:max-w-[70%]">
+            {t("technologies-description")}
+          </p>
         </div>
 
         <img src="/home/tech.webp" alt="How we optimize our work - Image" className="w-[352px] lg:w-[40%] lg:max-w-[400px] lg:flex" />

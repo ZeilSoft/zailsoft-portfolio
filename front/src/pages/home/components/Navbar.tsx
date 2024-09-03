@@ -83,65 +83,12 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/">
               <Icon icon="ri:tailwind-css-fill" width="32" height="32" className="text-main" />
-              {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="ZeilSoft Logo" /> */}
             </Link>
           </div>
 
           {/* NavLinks */}
           <div className="hidden md:ml-6 md:flex md:flex-1">
             <div className="flex w-full items-center justify-end text-center flex-row gap-2 re">
-
-              {/* <NavLink
-                to="/"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-light'}`}
-              >
-                {t('home')}
-                <span
-                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 ${pathname === '/' ? 'w-full' : 'w-0'}`}
-                >
-                  &nbsp;
-                </span>
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/about' ? 'text-main' : 'text-light'}`}
-              >
-                {t('about-us')}
-                <span
-                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
-                    ${pathname === '/about' ? 'w-full' : 'w-0'}`}
-                >
-                  &nbsp;
-                </span>
-              </NavLink>
-
-              <NavLink
-                to="/services"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/services' ? 'text-main' : 'text-light'}`}
-              >
-                {t('services')}
-                <span
-                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
-                    ${pathname === '/services' ? 'w-full' : 'w-0'}`}
-                >
-                  &nbsp;
-                </span>
-              </NavLink>
-
-              <NavLink
-                to="/contact"
-                className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/contact' ? 'text-main' : 'text-light'}`}
-              >
-                {t('contact-us')}
-                <span
-                  className={`h-[2.5px] inline-block bg-main absolute left-0 bottom-[1px] transition-[width] ease duration-300 
-                    ${pathname === '/contact' ? 'w-full' : 'w-0'}`}
-                >
-                  &nbsp;
-                </span>
-              </NavLink> */}
-
               <NavLink
                 to="/"
                 className={`rounded-md px-3 py-2 text-sm font-medium relative group hover:text-main transition-all duration-300 ${pathname === '/' ? 'text-main' : 'text-light'}`}
@@ -189,62 +136,6 @@ const Navbar = () => {
                   &nbsp;
                 </span>
               </NavLink>
-
-
-
-
-              {/* <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `rounded-md px-3 py-2 text-sm font-medium ${
-                    isActive
-                      ? "text-main border-b-2 border-main"
-                      : "text-light hover:text-main"
-                  } transition-colors duration-300`
-                }
-              >
-                {t('home')}
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `rounded-md px-3 py-2 text-sm font-medium ${
-                    isActive
-                      ? "text-main border-b-2 border-main"
-                      : "text-light hover:text-main"
-                  } transition-colors duration-300`
-                }
-              >
-                {t('about-us')}
-              </NavLink>
-
-              <NavLink
-                to="/services"
-                className={({ isActive }) =>
-                  `rounded-md px-3 py-2 text-sm font-medium ${
-                    isActive
-                      ? "text-main border-b-2 border-main"
-                      : "text-light hover:text-main"
-                  } transition-colors duration-300`
-                }
-              >
-                {t('services')}
-              </NavLink>
-
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `rounded-md px-3 py-2 text-sm font-medium ${
-                    isActive
-                      ? "text-main border-b-2 border-main"
-                      : "text-light hover:text-main"
-                  } transition-colors duration-300`
-                }
-              >
-                {t('contact-us')}
-              </NavLink> */}
-
             </div>
           </div>
 
@@ -264,7 +155,7 @@ const Navbar = () => {
 
               {/* Languages Modal */}
               <div
-                className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0E100F] rounded-md w-32 p-2 transition-all duration-300 ${
+                className={`absolute top-full right-0 xl:-left-3.5 mt-3 bg-[#0F0F0F] rounded-md w-32 p-2 transition-all duration-300 ${
                   langMenuOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                 }`}
               >
@@ -299,7 +190,7 @@ const Navbar = () => {
           }`}
         >
           <div
-            className={`bg-[#0E100F] w-[280px] h-full p-6 flex flex-col gap-6 transition-all duration-300 ${
+            className={`bg-[#0F0F0F] w-[280px] h-full p-6 flex flex-col gap-6 transition-all duration-300 ${
               open ? "translate-x-0" : "-translate-x-full"
             }`}
           > 

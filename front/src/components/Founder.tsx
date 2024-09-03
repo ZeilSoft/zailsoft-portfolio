@@ -3,6 +3,7 @@ interface FounderProps {
     name: string
     type: string
 }
+
 const Founder = ({image, name, type} : FounderProps) => {
   return (
     <div className="flex flex-col gap-4 w-56 lg:w-64">

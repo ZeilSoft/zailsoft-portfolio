@@ -2,14 +2,101 @@
   "home": "Home",
   "about-us": "About us",
   "services": "Services",
-  "work": "Work",
   "projects": "Projects",
   "contact-us": "Contact us",
+
+  "hero": "At Zeilsoft, we create customized solutions that transform your needs and ideas into a product or service that makes an impact. Let's work together to turn your vision into reality.",
+  "contact-us2": "Contact us",
+
+  "mobile-app": "Mobile application development",
+  "web-app": "Web application development",
+  "systems": "Creation and optimization of systems",
+  "ux/ui-design": "UX/UI Design: Intuitive and attractive interfaces",
+
+  "specialize": "We specialize in custom software development.",
+  "specialize-description": "We develop customized software that adapts to the specific needs of your business, providing efficiency, scalability, quality, tailored functionality, and, above all, outstanding results.",
+
+  "mission": "We have a clear mission:",
+  "mission-description": "Create products and services that make an impact on your daily work.",
+
+  "who-we-are": "Who we are?",
+  "multidisciplinary-team": "Multidisciplinary team",
+  "who-title": "specialized in software development, technology, products, systems, services, and operations.",
+  "who-description": "This allows us to be qualified and prepared to offer a comprehensive solution tailored to each client, with a focus on excellence and innovation in every project.",
+
+  "our-approach": "Our approach",
+  "deliver": "We deliver",
+  "approach-title": "software with Agile Engineering",
+  "approach-description": "We offer exceptional software using agile engineering. With an approach focused on adaptability, dynamism, and rapid implementation, we ensure high-quality solutions. We are committed to thoroughly understanding each problem and work closely with our clients to develop effective solutions that truly make a difference.",
+
+  "our-technologies": "Our technologies",
+  "we-specialize": "We specialize",
+  "technologies-title": "in different technologies.",
+  "technologies-description": "Some of the technologies we specialize in are: Javascript, Typescript, React, Next, Node, Nest, Java, SQL, React Native.",
+
+  "view-more": "View more",
+  "development": "Web and mobile application development",
+  "development-description": "We create custom software from scratch, specifically designed to meet the requirements and operations of your company. Our comprehensive approach includes an initial consultation to analyze and understand your needs, the development and delivery of the software, and technical support post-implementation to ensure long-term success.",
+  "systems-description": "We develop custom systems and optimize existing ones to enhance their performance and efficiency. From initial design to implementation, we focus on creating robust and scalable solutions. We analyze and refine systems to adapt them to your business's evolving needs, ensuring smooth and effective operation.",
+
+  "about-us2": "About us",
+  "about-us2-title": "Behind every great product, there is a great",
+  "team": "team",
+  "about-us2-description": "We promote teamwork, transparency, and enjoyment of the process as key components of a successful outcome.",
+
+  "culture-title": "Culture",
+  "culture-description": "We foster a collaborative work environment where every team member feels valued and motivated. We believe in trust, open communication, teamwork, and continuous learning as fundamental pillars for personal and professional growth. Our focus is on creating a space that encourages innovation and allows each member to contribute creative ideas. We promote a balance between work and personal life, ensuring that every project is a rewarding and fulfilling experience for everyone.",
+
+  "values-title": "Our values",
+  "values-description": "We are dedicated to incorporating our core values into every aspect of our work. We believe that our commitment to these principles not only sets us apart but also empowers us to deliver exceptional service. These values guide our operations, ensure quality, and build lasting relationships with our clients, guaranteeing outstanding results in every project.",
+
+  "teamwork": "Teamwork",
+  "innovation": "innovation",
+  "continuous-improvement": "Continuous Improvement",
+  "integrity": "Integrity",
+  "adaptability": "Adaptability",
+  "empathy": "Empathy",
+  "trust": "Trust",
+  "responsibility": "Responsibility",
+
+  "our-founders": "Our founders",
+  "founder": "Founder",
+
+  "our-main": "Our main",
+  "help": "How can we help you?",
+
+  "web-development": "Web development",
+  "web-development-description": "We develop custom websites using highly scalable front-end and back-end technologies, ensuring performance, security, and an exceptional user experience.",
+
+  "mobile-development": "Mobile development",
+  "mobile-development-description": "We create custom mobile applications using advanced technologies, optimized to deliver high performance, robust security, and an intuitive user experience across all platforms.",
+
+  "systems2": "Creation, updating, and maintenance of systems.",
+  "systems2-description": "We develop and enhance systems to ensure they remain up-to-date and efficient. We provide customized solutions that evolve with your needs and ensure continuous, reliable operation.",
+
+  "ux/ui-design2": "UX/UI Design",
+  "ux/ui-design2-description": "We design intuitive and visually appealing interfaces that enhance usability and elevate user satisfaction.",
+
+  "tech-review": "Tech Review",
+  "tech-review-description": "Sometimes, it's essential to gain an external perspective on your platform. We advise companies on optimizing their technology infrastructure and adopting new solutions efficiently, scalably, and securely.",
+
+  "support": "Technical Support and Maintenance",
+  "support-description": "We offer ongoing support and technical maintenance to ensure the optimal functioning of your applications and systems.",
+
+  "main-service-title": "We specialize in developing customized software to ensure efficiency and quality.",
+  "main-service-description": "We create tailored solutions that precisely fit your business needs, ensuring efficiency, scalability, and high quality. Our focus is on delivering specific functionalities and outstanding results that drive your company's success.",
+
+  "our-work": "our work",
+  "how-we-optimize": "How we optimize",
+  "how-we-optimize-description": "At ZeilSoft, in addition to the various technologies that shape our projects, we use a set of tools to streamline our daily processes. Our toolkit includes GitHub, Notion, Trello, and Discord. These tools integrate effectively, facilitating idea exchange, time management, communication, planning, collaboration, and development. Together, they support ZeilSoft’s working methodologies, promoting efficiency and seamless coordination.",
+
+
+
+  "work": "Work",
   "follow-us": "Follow us",
   "talk-to": "Talk to",
   "talk": "Let's talk",
   "us": "us",
-  "help": "How can we help you?",
   "fullname": "Full name",
   "email": "Email",
   "subject": "Subject",
@@ -19,15 +106,13 @@
   "collaborate": "collaborate",
   "talk-us": "Talk to us!",
   "copyright": "Copyright © 2024 ZeilSoft. All Rights Reserved.",
-  "speech": "Empowering the Fintech Revolution, together.",
+  "speech": "Together, we turn your ideas into exceptional software.",
   "work-together": "Let's work together!",
-  "see-more": "See more",
   "name-required": "Name is required",
   "email-invalid": "Email is invalid",
   "email-required": "Email is required",
   "subject-required": "Subject is required",
   "description-required": "Description is required",
-  "our-main": "Our main",
   "error-sending-email": "Error sending email",
   "send-email" : "We have successfully received your email.",
   "not-found": "Page not found",
