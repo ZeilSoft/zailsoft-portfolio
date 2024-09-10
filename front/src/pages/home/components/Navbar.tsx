@@ -70,19 +70,20 @@ const Navbar = () => {
               <span className="sr-only">Open main menu</span>
 
               {/* Open */}
-              <Icon
+              {/* <Icon
                 className={`${open ? "block" : "block ml-[-3px]"}`}
                 icon="material-symbols:menu"
                 width="24"
                 height="24"
-              />
+              /> */}
             </button>
           </div>
 
           {/* ZeilSoft Logo */}
           <div className="flex items-center">
             <Link to="/">
-              <Icon icon="ri:tailwind-css-fill" width="32" height="32" className="text-main" />
+            <img src="/zs.png" alt="logo" height="28" width="28" className={`${open ? "block" : "block ml-[-3px]"}`} />
+
             </Link>
           </div>
 
