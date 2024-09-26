@@ -15,26 +15,31 @@ const OurFounders = () => {
           image="/founders/gabriel-nievas.webp"
           name="Gabriel Nievas"
           type={t("founder")}
+          link="https://www.linkedin.com/in/gabriel-nievas/"
         />
         <Founder
           image="/founders/santiago-herrera.webp"
           name="Santiago Herrera"
           type={t("founder")}
+          link="https://www.linkedin.com/in/santiago-herrera-501293239"
         />
         <Founder
           image="/founders/emiliano-gonzalez.webp"
           name="Emiliano Gonzalez"
           type={t("founder")}
+          link="https://www.linkedin.com/in/emiigonzalez33/"
         />
         <Founder
           image="/founders/nicolas-reyes.webp"
           name="Nicolas Reyes"
           type={t("founder")}
+          link="https://www.linkedin.com/in/nicolas-reyes-0572172b/"
         />
         <Founder
           image="/founders/sergio-ferrari.webp"
           name="Sergio Ferrari"
           type={t("founder")}
+          link="https://www.linkedin.com/in/sergiofb/"
         />
       </div>
     </div>
