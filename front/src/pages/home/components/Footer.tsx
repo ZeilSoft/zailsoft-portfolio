@@ -1,6 +1,6 @@
 // import LinkedinIcon from "../../../utils/LinkedinIcon"
 
-import { Icon } from "@iconify/react/dist/iconify.js"
+/* import { Icon } from "@iconify/react/dist/iconify.js" */
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom"
 
@@ -60,7 +60,7 @@ const Footer = () => {
               <p>zeilsoftar@gmail.com</p>
             </div>
           </div>
-
+{/* 
           <div className="flex flex-col gap-2 items-center lg:items-start">
             <h3 className="font-semibold text-lg">{t("follow-us")}</h3>
             <div className="flex flex-row gap-2 mx-auto">
@@ -72,7 +72,7 @@ const Footer = () => {
                 <Icon icon="ri:linkedin-fill" className=" w-6" />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
