@@ -82,7 +82,7 @@ const Navbar = () => {
           {/* ZeilSoft Logo */}
           <div className="flex items-center">
             <Link to="/">
-            <img src="/zs.png" alt="logo" height="28" width="28" className={`${open ? "block" : "block ml-[-3px]"}`} />
+            <img src="/logo.svg" alt="logo" height="28" width="28" className={`${open ? "block" : "block ml-[-3px]"}`} />
 
             </Link>
           </div>

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-4 items-start justify-between mx-auto max-w-7xl w-full px-6 md:px-8 py-10">
         <div className="flex flex-col gap-2 mx-auto text-center lg:text-left lg:mx-0">
           <div className="flex flex-row justify-center items-center lg:justify-start gap-2">
-            <img src="/zs.png" alt="logo" height="24" width="24" />
+            <img src="/logo.svg" alt="logo" height="24" width="24" />
 
           </div>
           <p className="text-base max-w-[342px]">{t("speech")}</p>
